@@ -1,0 +1,241 @@
+Call of Duty 4 - SPi App Compile Tools (built-20021602)
+Designed by SPi
+Developed by Scillman
+Date: April 5, 2020 - Re-Released with Conquest Mode Open Source in March 31, 2021 and added Conquest Map template.
+
+SPi's YouTube PLEASE SUBSCRIBE!: https://www.youtube.com/channel/UCYpYA90Nr8C1qQnUrTlbCyA
+MOD's MODDB Page: https://www.moddb.com/mods/call-of-duty-4-conquest-mode-open-source
+Join SPi's Discord Server: https://discord.gg/Rs68sr4
+
+######
+About:
+######
+
+Call of Duty 4 SPi Tools is a new COD4 App that makes singleplayer mission developing way easier.
+It adds lots of shortcuts, and it makes the whole mission developing process so much easier.
+The app is based on the original COMPILE TOOLS with many more things added to it, 
+so we can say that it is an extended compile tools app.
+Also the app is designed to serve mainly singleplayer map making.
+It is not tested with multiplayer map making 
+so I can not promise it won't have problems with MP.
+
+The idea, the design and the abilities of the software are instructed by SPi
+The software programming and developing is done by Scillman.
+
+#############
+Installation:
+#############
+
+1) The SPiApp can work in it's own directory.
+you can simply paste the SPiApp2 folder where you want it to be "installed"
+I have it on my Call of Duty 4 Game directory to keep things compact.
+
+2) Open SPiApp folder and make shortcuts of SPiApp2.exe
+
+3) You're ready to start! Just like that!
+
+###########
+How to Use:
+###########
+
+Please read this part carefully so you know how to use these tools properly without problems.
+
+IMPORTANT:
+YOU NEED THE OFFICIAL CALL OF DUTY 4 MOD TOOLS INSTALLED FOR THIS APP TO WORK!
+
+I have made some Basic Mission Setup Tutorials (without this app)
+That you should definitely check out to have some standards in mind when you work on cod4.
+Here's the playlist:
+https://www.youtube.com/watch?v=rQ7W1xWVHEw&list=PLfPZdzppHBCqkM9rk9HLkLs8fjVVMSAj_
+
+First of all, there are 4 Tabs on top. We'll go through them one by one.
+
+==============
+1) PREFERENCES
+==============
+
+Here you must set the path of some essential folders and files for the tools to work properly.
+
+First Tab: Required. 
+Set your Call of Duty 4 game folder there, then your language, and then the 7za.exe file.
+7za.exe is probably located in call of duty 4/bin folder that comes with the official COD4 Mod Tools.
+If it's not then you probably have to get it somehow. I am not authorized to provide it to you.
+When you are done setting the paths, don't forget to press SAVE CHANGES to apply them.
+If you don't they may not be saved if you close the app.
+
+Second Tab: Advanced.
+Singleplayer executable should be: iw3sp.exe in most cases.
+Chose a Text editor software with which your map's gsc, str and csv files will open through our App.
+The rest settings here are not so important.
+Don't forget to press SAVE CHANGES again.
+
+Third Tab: Optional.
+Here, you can set some custom folder shortcuts.
+Text is button name, destination is the path of the folder.
+
+=================================
+2) COMPILING
+=================================
+
+This is where all the magic happens.
+Here you can easily create missions and browse through the necessary files.
+
+======== PART A: CREATING THE MISSION. =============
+
+On the TOP LEFT corner of the app you can see NEW MAP and REFRESH
+
+NEW MAP is a very special button I came up with.
+By clicking on it you're asked to select a template to generate a new map.
+Template files are in the template folder in the app's directory.
+You can make your own templates by following the instructions there.
+For now there are only two working template: SPi_testmap and survival_basic.
+We will go with Basic Map(SPi) for the first test.
+Type a valid map_name for your new level and click Create Map.
+Then, the app will generate a new map with the name you entered, based on the template files.
+All you have to do to play the map is to complete all compile steps.
+
+REFRESH just refreshes the map list in case you created a new one while the app is open so it appears on the list.
+Exactly like original Compile Tools.
+
+============= PART B: COMPILING =============
+
+When you have a map from the Map List selected,
+you can directly open the map in radiant by pressing the Radiant button on top-middle-left.
+There's a "Load Selected Map in Radiant" button that you can use to open the selected map 
+from the Map List when you start Radiant from this shortcut. Pretty handy right?
+You can use the shortcuts on the middle-right side of the tab to access the selected map's scripts.
+This way, after generating a new map through the basic templates, 
+you can expand and make your own missions by editing the files of the newly generated map.
+
+On the Far-Left under the Map List you can see the 5 compile buttons just like original Compile Tools.
+They work exactly the same. Make sure to have proper options on the BSP and LIGHT options when compiling.
+BSP options should all be unchecked.
+LIGHT options should be fast, verbose, model shadow for TESTING
+and just extra when final RELEASE.
+It's not recommended that you mess with the rest, 
+unless you know what you are doing.
+
+Having all this in mind, we click New Map, 
+we select the spi_testmap template,
+we put a valid name let's say: my_test1
+we click create map,
+we check fast, verbose and model shadow in light options, and unchedk extra if its checked.
+we make sure Compile BSP, Lighting and Paths are all checked,
+we press Compile BSP,
+we wait for it to finish,
+we press Compile Reflections,
+we wait for it to finish,
+we press Build Fast File,
+we wait for it to finish,
+and finally, we press Run Selected Map to play our new basic Singleplayer map.
+
+Given that the template you chose is not having things missing, it will run without errors.
+
+Now that you know the map is working, you are ready to start expanding your map.
+Click the Radiant Button to open the selected map and edit it any way you want,
+or click on the script shortcuts for the selected map to start scripting your own mission events.
+Good Luck!
+
+Friendly ERROR Advise:
+If you are new to this, you will come across errors when doing new scripting stuff in your maps.
+Errors are and always will be natural when humans do scripting, coding and programming.
+There is ALWAYS something we missed or something wrong with the files we made.
+Sometimes it's the engine itself, but most times it's a human error. 
+
+Keep developer on and check the game's console when errors pop up.
+
+Game breaking errors will throw you out of the map back to menu when you press escape.
+Less important errors will just pop an error screen as you play the map and resume the mission when you press escape.
+Worst kind of errors are the ones that crash the game without warning.
+
+============= PART C: MOD DEVELOPING =============
+
+When making missions that do not have any custom assets, 
+like new textures, new sounds and stuff like that,
+you do NOT need a mod. It is recommended to stay this way.
+
+But if you want a more advanced and richer map with modded assets,
+then a mod is a must for your map.
+
+While on the Compiling Tab, on the whole right side of the app
+we can see Mod Compiling options.
+Here we can find buttons like New Mod and Refresh
+that work similar to the Level compiling ones,
+below them we can find a list of the mod folders that are in the game's mod folder.
+And below that we can see various mod making buttons.
+
+Browse Folder opens the folder of the selected mod in the mod list.
+Build Fast File, Build IWD File and Update Zone File of the mod part,
+aren't fully working so I suggest not messing with them.
+I haven't used this app to create mods. I do it an other way.
+Scillman added these buttons to the app for advanced users.
+I haven't explored the app's mod creating abilities in depth 
+so I can not give any guidance or advise.
+If you have no idea how it works, I suggest not touching it.
+For further info, ask Scillman.
+
+However you can just use this list to start up mods easier.
+Below the Run Selected Mod button we can find launch options for the mod.
+Start game with the mod in Singleplayer or Multiplayer.
+Developer mode, Developer Script, Cheats, and load selected map when launching the modded game.
+These can be pretty handy.
+
+============= PART D: SHORTCUTS =============
+
+Middle-Top Mod tool shortcut buttons:
+1) We only talked about the Radiant button which can just open without a map if the checkbox isn't checked,
+or it can open with the selected map from the map list loaded if the checkbox is checked.
+2) Assets Manager opens Assets Manager.
+3) Effects Editor opens Effects Editor.
+
+Middle-Bottom Custom Shortcuts.
+We talked about those in the Preferences>Optional tab.
+You can set your own folder shortcuts here.
+
+Middle-Right and lower 
+Folder Browsing:
+Six very significant folders of cod4/raw directory that are often used
+when making singleplayer levels or mods. Very handy in many cases.
+
+===========
+3) BROWSING
+===========
+
+Browsing is the simplest tab there is.
+It just adds useful folder shortcuts from the game and mod tools folders that you may need.
+It's a lot better than browsing the game directory to find one single file.
+Some of them are already in the previous tab for faster navigation.
+
+===============
+4) APPLICATIONS
+===============
+
+This Tab is similar to the Compile Tools' Applications Tab.
+You have Radiant, Assets manager, Effects Editor and Run Converter
+with the same descriptions.
+Only one change is done for users safety.
+When you click Run Converter it will ask for confirmation.
+
+Run Converter should only be ran once when the tools are installed
+and when you have no work done in the game.
+
+Never ever ever run it again after you've done work because it will most likely mess things up.
+Careful with that.
+
+=================================
+
+OUTRO:
+That's all there is. I hope I explained everything you needed 
+and I also hope that you find this tool extremely helpful in your mapping experience.
+
+If you hesitate using the tool because you don't trust it, I totally understand it.
+But I myself use this app non-stop since December of 2018 and I never had problems with them.
+On the contrary they made my life so much easier when working with COD4 mod tools.
+Scillman who programmed this app should even have the source code somewhere.
+He may show it to you if you ask him.
+
+For any further questions you can ask me(SPi) or Scillman.
+Good Luck!
+
+===========================================================
+===========================================================

@@ -1,0 +1,5 @@
+Call of Duty 4: Mod Tools - Spi App Template - "SPi_Testmap"
+
+This template auto generates an empty and very basic 
+and functional Singleplayer map for Call of Duty 4 
+with Call of Duty 4 Spi App Compile tools.
