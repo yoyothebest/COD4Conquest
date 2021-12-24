@@ -1,0 +1,5285 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"reflection_ignore_portals" "0"
+"classname" "worldspawn"
+"sunlight" "1.5"
+"sundirection" "-40 195 0"
+"sundiffusecolor" ".8 .85 1"
+"suncolor" "1 .95 0.8"
+"northyaw" "90"
+"diffusefraction" ".35"
+"ambient" "0.2"
+"_color" ".85 .9 1"
+// brush 0
+{
+ ( 2680 3616 -568 ) ( -3528 3616 -568 ) ( -3528 -3920 -568 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3552 -3760 1096 ) ( 2656 -3760 1096 ) ( 2656 -3760 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2656 -3920 1096 ) ( 2656 3616 1096 ) ( 2656 3616 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2560 2744 1096 ) ( -3648 2744 1096 ) ( -3648 2744 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3712 3600 1096 ) ( -3712 -3936 1096 ) ( -3712 -3936 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3528 3616 -560 ) ( 2680 3616 -560 ) ( -3528 -3920 -560 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ ( -3376 -3920 3400 ) ( -3376 3616 3400 ) ( 2832 3616 3400 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3552 -3760 1096 ) ( 2656 -3760 1096 ) ( 2656 -3760 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2656 -3920 1096 ) ( 2656 3616 1096 ) ( 2656 3616 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2560 2744 1096 ) ( -3648 2744 1096 ) ( -3648 2744 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3712 3600 1096 ) ( -3712 -3936 1096 ) ( -3712 -3936 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3376 3616 3392 ) ( -3376 -3920 3392 ) ( 2832 3616 3392 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+ ( 2680 3616 -568 ) ( -3528 3616 -568 ) ( -3528 -3920 -568 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3376 -3920 3400 ) ( -3376 3616 3400 ) ( 2832 3616 3400 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3552 -3760 1096 ) ( 2656 -3760 1096 ) ( 2656 -3760 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2656 -3920 1096 ) ( 2656 3616 1096 ) ( 2656 3616 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3712 3600 1096 ) ( -3712 -3936 1096 ) ( -3712 -3936 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2656 -3752 1096 ) ( -3552 -3752 1096 ) ( 2656 -3752 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+ ( 2680 3616 -568 ) ( -3528 3616 -568 ) ( -3528 -3920 -568 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3376 -3920 3400 ) ( -3376 3616 3400 ) ( 2832 3616 3400 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3552 -3760 1096 ) ( 2656 -3760 1096 ) ( 2656 -3760 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2656 -3920 1096 ) ( 2656 3616 1096 ) ( 2656 3616 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2560 2744 1096 ) ( -3648 2744 1096 ) ( -3648 2744 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2648 3616 1096 ) ( 2648 -3920 1096 ) ( 2648 3616 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+ ( 2680 3616 -568 ) ( -3528 3616 -568 ) ( -3528 -3920 -568 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3376 -3920 3400 ) ( -3376 3616 3400 ) ( 2832 3616 3400 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2656 -3920 1096 ) ( 2656 3616 1096 ) ( 2656 3616 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2560 2744 1096 ) ( -3648 2744 1096 ) ( -3648 2744 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3712 3600 1096 ) ( -3712 -3936 1096 ) ( -3712 -3936 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3648 2736 1096 ) ( 2560 2736 1096 ) ( -3648 2736 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+ ( 2680 3616 -568 ) ( -3528 3616 -568 ) ( -3528 -3920 -568 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3376 -3920 3400 ) ( -3376 3616 3400 ) ( 2832 3616 3400 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3552 -3760 1096 ) ( 2656 -3760 1096 ) ( 2656 -3760 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2560 2744 1096 ) ( -3648 2744 1096 ) ( -3648 2744 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3712 3600 1096 ) ( -3712 -3936 1096 ) ( -3712 -3936 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3704 -3936 1096 ) ( -3704 3600 1096 ) ( -3704 -3936 -448 ) sky_mp_citystreets 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+ ( 1576 1376 -64 ) ( -2168 1376 -64 ) ( -2168 -2432 -64 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -2168 -2432 432 ) ( -2168 1376 432 ) ( 1576 1376 432 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -2160 -2432 8 ) ( 1584 -2432 8 ) ( 1584 -2432 0 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1584 -2432 8 ) ( 1584 1376 8 ) ( 1584 1376 0 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1584 1376 8 ) ( -2160 1376 8 ) ( -2160 1376 0 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -2160 1376 8 ) ( -2160 -2432 8 ) ( -2160 -2432 0 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"targetname" "flag0_spawns"
+"classname" "script_origin"
+"angles" "0 315 0"
+"origin" "128.0 -336.0 8.0"
+"_color" "0.2 0.1 0.8"
+}
+// entity 2
+{
+"target" "flag0_spawns"
+"radius" "350"
+"height" "100"
+"targetname" "flag"
+"classname" "script_origin"
+"_color" "1 0.1 1"
+"origin" "-160.0 -232.0 8.0"
+}
+// entity 3
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-184.0 -88.0 8.0"
+"angles" "0 135 0"
+"classname" "script_origin"
+"targetname" "flag0_spawns"
+}
+// entity 4
+{
+"origin" "-736.0 1496.0 344.0"
+"model" "sp_conquest/flag_poles_clip_x12.map"
+"classname" "misc_prefab"
+}
+// entity 5
+{
+"classname" "misc_prefab"
+"model" "sp_conquest/cq_cod4_spawns.map"
+"origin" "-896.0 1520.0 -40.0"
+}
+// entity 6
+{
+"origin" "296.0 48.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 7
+{
+"origin" "328.0 -40.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 8
+{
+"origin" "200.0 -40.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 9
+{
+"origin" "72.0 -40.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 10
+{
+"origin" "-56.0 88.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 11
+{
+"origin" "-108.0 4.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 12
+{
+"origin" "200.0 -168.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 13
+{
+"origin" "200.0 -296.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 14
+{
+"origin" "84.0 -296.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 15
+{
+"origin" "-184.0 -296.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 16
+{
+"origin" "-312.0 -168.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 17
+{
+"origin" "-312.0 -296.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 18
+{
+"origin" "-440.0 -168.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 19
+{
+"origin" "-440.0 -296.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 20
+{
+"origin" "-552.0 -224.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 21
+{
+"origin" "-568.0 -296.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 22
+{
+"origin" "-184.0 88.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 23
+{
+"origin" "-328.0 -304.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 24
+{
+"origin" "-312.0 -40.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 25
+{
+"origin" "-352.0 32.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 26
+{
+"origin" "-440.0 -40.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 27
+{
+"origin" "-552.0 52.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 28
+{
+"origin" "-568.0 -40.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 29
+{
+"origin" "-376.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 30
+{
+"origin" "-376.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 31
+{
+"origin" "-504.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 32
+{
+"origin" "-504.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 33
+{
+"origin" "-120.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 34
+{
+"origin" "-120.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 35
+{
+"origin" "-248.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 36
+{
+"origin" "136.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 37
+{
+"origin" "136.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 38
+{
+"origin" "8.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 39
+{
+"origin" "8.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 40
+{
+"origin" "264.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 41
+{
+"origin" "264.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 42
+{
+"origin" "-456.0 -624.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 43
+{
+"origin" "-456.0 -728.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 44
+{
+"origin" "-456.0 -944.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 45
+{
+"origin" "-456.0 -840.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 46
+{
+"origin" "-376.0 -1032.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 47
+{
+"origin" "-504.0 -1032.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 48
+{
+"origin" "-376.0 -1160.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 49
+{
+"origin" "-504.0 -1160.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 50
+{
+"origin" "-376.0 -1288.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 51
+{
+"origin" "-504.0 -1288.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 52
+{
+"origin" "-376.0 -1416.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 53
+{
+"origin" "-504.0 -1416.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 54
+{
+"origin" "-376.0 -1544.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 55
+{
+"origin" "-504.0 -1544.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 56
+{
+"origin" "-376.0 -1672.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 57
+{
+"origin" "-504.0 -1672.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 58
+{
+"origin" "-376.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 59
+{
+"origin" "-504.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 60
+{
+"origin" "-376.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 61
+{
+"origin" "-504.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 62
+{
+"origin" "-376.0 -2056.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 63
+{
+"origin" "-504.0 -2056.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 64
+{
+"origin" "-376.0 -2184.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 65
+{
+"origin" "-504.0 -2184.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 66
+{
+"origin" "-632.0 -2056.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 67
+{
+"origin" "-720.0 -2080.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 68
+{
+"origin" "-632.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 69
+{
+"origin" "-760.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 70
+{
+"origin" "-632.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 71
+{
+"origin" "-760.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 72
+{
+"origin" "-888.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 73
+{
+"origin" "-888.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 74
+{
+"origin" "-936.0 -2088.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 75
+{
+"origin" "-1016.0 -2056.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 76
+{
+"origin" "-1088.0 -2072.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 77
+{
+"origin" "-1016.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 78
+{
+"origin" "-1144.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 79
+{
+"origin" "-1016.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 80
+{
+"origin" "-1144.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 81
+{
+"origin" "-1272.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 82
+{
+"origin" "-1272.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 83
+{
+"origin" "-1400.0 -2056.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 84
+{
+"origin" "-1476.0 -2024.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 85
+{
+"origin" "-1400.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 86
+{
+"origin" "-1528.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 87
+{
+"origin" "-1528.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 88
+{
+"origin" "-1272.0 -1416.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 89
+{
+"origin" "-1272.0 -1544.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 90
+{
+"origin" "-1272.0 -1672.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 91
+{
+"origin" "-1400.0 -1672.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 92
+{
+"origin" "-1528.0 -1632.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 93
+{
+"origin" "-1400.0 -1544.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 94
+{
+"origin" "-1528.0 -1544.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 95
+{
+"origin" "-1400.0 -1416.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 96
+{
+"origin" "-1528.0 -1416.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 97
+{
+"origin" "-1144.0 -1672.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 98
+{
+"origin" "-1144.0 -1544.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 99
+{
+"origin" "-1144.0 -1416.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 100
+{
+"origin" "-1272.0 -1160.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 101
+{
+"origin" "-1272.0 -1288.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 102
+{
+"origin" "-1400.0 -1288.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 103
+{
+"origin" "-1528.0 -1288.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 104
+{
+"origin" "-1392.0 -1160.0 48.9"
+"classname" "node_pathnode"
+}
+// entity 105
+{
+"origin" "-1144.0 -1248.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 106
+{
+"origin" "-1144.0 -1160.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 107
+{
+"origin" "-1272.0 -904.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 108
+{
+"origin" "-1272.0 -1032.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 109
+{
+"origin" "-1336.0 -1088.0 48.0"
+"classname" "node_pathnode"
+}
+// entity 110
+{
+"origin" "-1400.0 -904.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 111
+{
+"origin" "-1528.0 -904.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 112
+{
+"origin" "-1144.0 -1032.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 113
+{
+"origin" "-1144.0 -904.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 114
+{
+"origin" "-1272.0 -648.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 115
+{
+"origin" "-1272.0 -776.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 116
+{
+"origin" "-1400.0 -776.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 117
+{
+"origin" "-1528.0 -744.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 118
+{
+"origin" "-1400.0 -648.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 119
+{
+"origin" "-1528.0 -648.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 120
+{
+"origin" "-1144.0 -776.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 121
+{
+"origin" "-1128.0 -648.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 122
+{
+"origin" "-1272.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 123
+{
+"origin" "-1272.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 124
+{
+"origin" "-1400.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 125
+{
+"origin" "-1528.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 126
+{
+"origin" "-1400.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 127
+{
+"origin" "-1504.0 -424.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 128
+{
+"origin" "-1144.0 -520.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 129
+{
+"origin" "-1144.0 -392.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 130
+{
+"classname" "node_pathnode"
+"origin" "-1144.0 -96.0 32.0"
+}
+// entity 131
+{
+"classname" "node_pathnode"
+"origin" "-1144.0 -224.0 32.0"
+}
+// entity 132
+{
+"classname" "node_pathnode"
+"origin" "-1528.0 -136.0 32.0"
+}
+// entity 133
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 -136.0 32.0"
+}
+// entity 134
+{
+"classname" "node_pathnode"
+"origin" "-1544.0 -232.0 32.0"
+}
+// entity 135
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 -264.0 32.0"
+}
+// entity 136
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 -136.0 32.0"
+}
+// entity 137
+{
+"classname" "node_pathnode"
+"origin" "-1144.0 32.0 32.0"
+}
+// entity 138
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 120.0 32.0"
+}
+// entity 139
+{
+"classname" "node_pathnode"
+"origin" "-1528.0 -8.0 32.0"
+}
+// entity 140
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 -8.0 32.0"
+}
+// entity 141
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 -8.0 32.0"
+}
+// entity 142
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 120.0 32.0"
+}
+// entity 143
+{
+"classname" "node_pathnode"
+"origin" "-1016.0 -96.0 32.0"
+}
+// entity 144
+{
+"classname" "node_pathnode"
+"origin" "-1016.0 -224.0 32.0"
+}
+// entity 145
+{
+"classname" "node_pathnode"
+"origin" "-1016.0 32.0 32.0"
+}
+// entity 146
+{
+"classname" "node_pathnode"
+"origin" "-888.0 -96.0 32.0"
+}
+// entity 147
+{
+"classname" "node_pathnode"
+"origin" "-888.0 -224.0 32.0"
+}
+// entity 148
+{
+"classname" "node_pathnode"
+"origin" "-888.0 32.0 32.0"
+}
+// entity 149
+{
+"classname" "node_pathnode"
+"origin" "-760.0 -224.0 32.0"
+}
+// entity 150
+{
+"classname" "node_pathnode"
+"origin" "-848.0 94.0 32.0"
+}
+// entity 151
+{
+"classname" "node_pathnode"
+"origin" "-636.0 -156.0 32.0"
+}
+// entity 152
+{
+"classname" "node_pathnode"
+"origin" "-648.0 -224.0 32.0"
+}
+// entity 153
+{
+"classname" "node_pathnode"
+"origin" "-616.0 48.0 32.0"
+}
+// entity 154
+{
+"classname" "node_pathnode"
+"origin" "-1656.0 -136.0 32.0"
+}
+// entity 155
+{
+"classname" "node_pathnode"
+"origin" "-1656.0 -312.0 32.0"
+}
+// entity 156
+{
+"classname" "node_pathnode"
+"origin" "-1656.0 -8.0 32.0"
+}
+// entity 157
+{
+"classname" "node_pathnode"
+"origin" "-1784.0 -136.0 32.0"
+}
+// entity 158
+{
+"classname" "node_pathnode"
+"origin" "-1784.0 -312.0 32.0"
+}
+// entity 159
+{
+"classname" "node_pathnode"
+"origin" "-1784.0 -8.0 32.0"
+}
+// entity 160
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 248.0 64.0"
+}
+// entity 161
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 248.0 64.0"
+}
+// entity 162
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 376.0 96.0"
+}
+// entity 163
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 376.0 96.0"
+}
+// entity 164
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 504.0 128.0"
+}
+// entity 165
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 504.0 128.0"
+}
+// entity 166
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 632.0 168.0"
+}
+// entity 167
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 632.0 168.0"
+}
+// entity 168
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 760.0 168.0"
+}
+// entity 169
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 760.0 168.0"
+}
+// entity 170
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 888.0 168.0"
+}
+// entity 171
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 888.0 168.0"
+}
+// entity 172
+{
+"classname" "node_pathnode"
+"origin" "-1400.0 1016.0 168.0"
+}
+// entity 173
+{
+"classname" "node_pathnode"
+"origin" "-1272.0 1016.0 168.0"
+}
+// entity 174
+{
+"classname" "node_pathnode"
+"origin" "-1144.0 760.0 168.0"
+}
+// entity 175
+{
+"classname" "node_pathnode"
+"origin" "-1112.0 672.0 168.0"
+}
+// entity 176
+{
+"classname" "node_pathnode"
+"origin" "-1144.0 888.0 168.0"
+}
+// entity 177
+{
+"classname" "node_pathnode"
+"origin" "-944.0 832.0 168.0"
+}
+// entity 178
+{
+"classname" "node_pathnode"
+"origin" "-1144.0 1016.0 168.0"
+}
+// entity 179
+{
+"classname" "node_pathnode"
+"origin" "-1016.0 960.0 168.0"
+}
+// entity 180
+{
+"classname" "node_pathnode"
+"origin" "-888.0 760.0 168.0"
+}
+// entity 181
+{
+"classname" "node_pathnode"
+"origin" "-760.0 760.0 168.0"
+}
+// entity 182
+{
+"classname" "node_pathnode"
+"origin" "-888.0 888.0 168.0"
+}
+// entity 183
+{
+"classname" "node_pathnode"
+"origin" "-760.0 888.0 168.0"
+}
+// entity 184
+{
+"classname" "node_pathnode"
+"origin" "-888.0 1016.0 168.0"
+}
+// entity 185
+{
+"classname" "node_pathnode"
+"origin" "-760.0 1016.0 168.0"
+}
+// entity 186
+{
+"classname" "node_pathnode"
+"origin" "-592.0 808.0 168.0"
+}
+// entity 187
+{
+"classname" "node_pathnode"
+"origin" "-480.0 792.0 168.0"
+}
+// entity 188
+{
+"classname" "node_pathnode"
+"origin" "-632.0 888.0 168.0"
+}
+// entity 189
+{
+"classname" "node_pathnode"
+"origin" "-632.0 1016.0 168.0"
+}
+// entity 190
+{
+"classname" "node_pathnode"
+"origin" "-504.0 1016.0 168.0"
+}
+// entity 191
+{
+"classname" "node_pathnode"
+"origin" "-376.0 760.0 168.0"
+}
+// entity 192
+{
+"classname" "node_pathnode"
+"origin" "-248.0 760.0 168.0"
+}
+// entity 193
+{
+"classname" "node_pathnode"
+"origin" "-376.0 888.0 168.0"
+}
+// entity 194
+{
+"classname" "node_pathnode"
+"origin" "-248.0 888.0 168.0"
+}
+// entity 195
+{
+"classname" "node_pathnode"
+"origin" "-424.0 1040.0 168.0"
+}
+// entity 196
+{
+"classname" "node_pathnode"
+"origin" "-248.0 1016.0 168.0"
+}
+// entity 197
+{
+"classname" "node_pathnode"
+"origin" "-120.0 760.0 168.0"
+}
+// entity 198
+{
+"classname" "node_pathnode"
+"origin" "8.0 760.0 168.0"
+}
+// entity 199
+{
+"classname" "node_pathnode"
+"origin" "-120.0 888.0 168.0"
+}
+// entity 200
+{
+"classname" "node_pathnode"
+"origin" "8.0 888.0 168.0"
+}
+// entity 201
+{
+"classname" "node_pathnode"
+"origin" "-120.0 1016.0 168.0"
+}
+// entity 202
+{
+"classname" "node_pathnode"
+"origin" "8.0 1016.0 168.0"
+}
+// entity 203
+{
+"classname" "node_pathnode"
+"origin" "136.0 760.0 168.0"
+}
+// entity 204
+{
+"classname" "node_pathnode"
+"origin" "264.0 760.0 168.0"
+}
+// entity 205
+{
+"classname" "node_pathnode"
+"origin" "136.0 888.0 168.0"
+}
+// entity 206
+{
+"classname" "node_pathnode"
+"origin" "136.0 1016.0 168.0"
+}
+// entity 207
+{
+"classname" "node_pathnode"
+"origin" "264.0 1016.0 168.0"
+}
+// entity 208
+{
+"classname" "node_pathnode"
+"origin" "392.0 760.0 168.0"
+}
+// entity 209
+{
+"classname" "node_pathnode"
+"origin" "512.0 808.0 168.0"
+}
+// entity 210
+{
+"classname" "node_pathnode"
+"origin" "392.0 888.0 168.0"
+}
+// entity 211
+{
+"classname" "node_pathnode"
+"origin" "520.0 888.0 168.0"
+}
+// entity 212
+{
+"classname" "node_pathnode"
+"origin" "392.0 1016.0 168.0"
+}
+// entity 213
+{
+"classname" "node_pathnode"
+"origin" "520.0 1016.0 168.0"
+}
+// entity 214
+{
+"classname" "node_pathnode"
+"origin" "632.0 816.0 168.0"
+}
+// entity 215
+{
+"classname" "node_pathnode"
+"origin" "776.0 760.0 168.0"
+}
+// entity 216
+{
+"classname" "node_pathnode"
+"origin" "648.0 888.0 168.0"
+}
+// entity 217
+{
+"classname" "node_pathnode"
+"origin" "776.0 832.0 168.0"
+}
+// entity 218
+{
+"classname" "node_pathnode"
+"origin" "592.0 968.0 168.0"
+}
+// entity 219
+{
+"classname" "node_pathnode"
+"origin" "776.0 1016.0 168.0"
+}
+// entity 220
+{
+"classname" "node_pathnode"
+"origin" "904.0 760.0 168.0"
+}
+// entity 221
+{
+"classname" "node_pathnode"
+"origin" "1032.0 760.0 168.0"
+}
+// entity 222
+{
+"classname" "node_pathnode"
+"origin" "904.0 832.0 168.0"
+}
+// entity 223
+{
+"classname" "node_pathnode"
+"origin" "1032.0 832.0 168.0"
+}
+// entity 224
+{
+"classname" "node_pathnode"
+"origin" "904.0 1016.0 168.0"
+}
+// entity 225
+{
+"classname" "node_pathnode"
+"origin" "1032.0 1016.0 168.0"
+}
+// entity 226
+{
+"classname" "node_pathnode"
+"origin" "1160.0 760.0 168.0"
+}
+// entity 227
+{
+"classname" "node_pathnode"
+"origin" "1288.0 760.0 168.0"
+}
+// entity 228
+{
+"classname" "node_pathnode"
+"origin" "1128.0 840.0 168.0"
+}
+// entity 229
+{
+"classname" "node_pathnode"
+"origin" "1320.0 880.0 168.0"
+}
+// entity 230
+{
+"classname" "node_pathnode"
+"origin" "1160.0 1016.0 168.0"
+}
+// entity 231
+{
+"classname" "node_pathnode"
+"origin" "1288.0 1040.0 168.0"
+}
+// entity 232
+{
+"classname" "node_pathnode"
+"origin" "1392.0 760.0 168.0"
+}
+// entity 233
+{
+"classname" "node_pathnode"
+"origin" "1392.0 1016.0 168.0"
+}
+// entity 234
+{
+"classname" "node_pathnode"
+"origin" "904.0 376.0 168.0"
+}
+// entity 235
+{
+"classname" "node_pathnode"
+"origin" "1032.0 376.0 168.0"
+}
+// entity 236
+{
+"classname" "node_pathnode"
+"origin" "904.0 504.0 168.0"
+}
+// entity 237
+{
+"classname" "node_pathnode"
+"origin" "1032.0 504.0 168.0"
+}
+// entity 238
+{
+"classname" "node_pathnode"
+"origin" "904.0 632.0 168.0"
+}
+// entity 239
+{
+"classname" "node_pathnode"
+"origin" "1072.0 632.0 168.0"
+}
+// entity 240
+{
+"classname" "node_pathnode"
+"origin" "904.0 -8.0 170.7"
+}
+// entity 241
+{
+"classname" "node_pathnode"
+"origin" "1048.0 -8.0 162.7"
+}
+// entity 242
+{
+"classname" "node_pathnode"
+"origin" "888.0 184.0 168.0"
+}
+// entity 243
+{
+"classname" "node_pathnode"
+"origin" "1032.0 120.0 168.0"
+}
+// entity 244
+{
+"classname" "node_pathnode"
+"origin" "904.0 248.0 168.0"
+}
+// entity 245
+{
+"classname" "node_pathnode"
+"origin" "1032.0 248.0 168.0"
+}
+// entity 246
+{
+"classname" "node_pathnode"
+"origin" "1160.0 376.0 168.0"
+}
+// entity 247
+{
+"classname" "node_pathnode"
+"origin" "1224.0 416.0 168.0"
+}
+// entity 248
+{
+"classname" "node_pathnode"
+"origin" "1160.0 632.0 168.0"
+}
+// entity 249
+{
+"classname" "node_pathnode"
+"origin" "1160.0 -8.0 162.7"
+}
+// entity 250
+{
+"classname" "node_pathnode"
+"origin" "1160.0 120.0 168.0"
+}
+// entity 251
+{
+"classname" "node_pathnode"
+"origin" "1160.0 248.0 168.0"
+}
+// entity 252
+{
+"classname" "node_pathnode"
+"origin" "1032.0 -392.0 105.9"
+}
+// entity 253
+{
+"classname" "node_pathnode"
+"origin" "1032.0 -264.0 124.9"
+}
+// entity 254
+{
+"classname" "node_pathnode"
+"origin" "1032.0 -136.0 143.8"
+}
+// entity 255
+{
+"classname" "node_pathnode"
+"origin" "1160.0 -392.0 105.9"
+}
+// entity 256
+{
+"classname" "node_pathnode"
+"origin" "1160.0 -296.0 124.9"
+}
+// entity 257
+{
+"classname" "node_pathnode"
+"origin" "1160.0 -80.0 143.8"
+}
+// entity 258
+{
+"classname" "node_pathnode"
+"origin" "1032.0 -776.0 49.2"
+}
+// entity 259
+{
+"classname" "node_pathnode"
+"origin" "1032.0 -648.0 68.1"
+}
+// entity 260
+{
+"classname" "node_pathnode"
+"origin" "1032.0 -520.0 87.0"
+}
+// entity 261
+{
+"classname" "node_pathnode"
+"origin" "1160.0 -776.0 49.2"
+}
+// entity 262
+{
+"classname" "node_pathnode"
+"origin" "1160.0 -664.0 68.1"
+}
+// entity 263
+{
+"classname" "node_pathnode"
+"origin" "1232.0 -520.0 87.0"
+}
+// entity 264
+{
+"classname" "node_pathnode"
+"origin" "904.0 -136.0 151.8"
+}
+// entity 265
+{
+"classname" "node_pathnode"
+"origin" "904.0 -392.0 113.9"
+}
+// entity 266
+{
+"classname" "node_pathnode"
+"origin" "904.0 -264.0 132.9"
+}
+// entity 267
+{
+"classname" "node_pathnode"
+"origin" "904.0 -504.0 95.0"
+}
+// entity 268
+{
+"classname" "node_pathnode"
+"origin" "936.0 -776.0 57.2"
+}
+// entity 269
+{
+"classname" "node_pathnode"
+"origin" "904.0 -648.0 76.1"
+}
+// entity 270
+{
+"origin" "280.0 -608.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 271
+{
+"origin" "280.0 -688.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 272
+{
+"origin" "280.0 -784.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 273
+{
+"origin" "272.0 -888.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 274
+{
+"origin" "336.0 -856.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 275
+{
+"origin" "208.0 -984.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 276
+{
+"origin" "336.0 -1032.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 277
+{
+"origin" "208.0 -1112.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 278
+{
+"origin" "312.0 -1096.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 279
+{
+"origin" "208.0 -1240.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 280
+{
+"origin" "336.0 -1240.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 281
+{
+"origin" "208.0 -1336.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 282
+{
+"origin" "336.0 -1368.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 283
+{
+"origin" "504.0 -1224.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 284
+{
+"origin" "592.0 -1240.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 285
+{
+"origin" "464.0 -1368.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 286
+{
+"origin" "592.0 -1368.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 287
+{
+"origin" "-272.0 -1272.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 288
+{
+"origin" "-144.0 -1272.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 289
+{
+"origin" "-296.0 -1376.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 290
+{
+"origin" "-144.0 -1400.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 291
+{
+"origin" "-16.0 -1272.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 292
+{
+"origin" "112.0 -1272.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 293
+{
+"origin" "-16.0 -1400.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 294
+{
+"origin" "72.0 -1336.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 295
+{
+"origin" "-272.0 -1144.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 296
+{
+"origin" "-192.0 -1144.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 297
+{
+"origin" "40.0 -1144.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 298
+{
+"origin" "112.0 -1144.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 299
+{
+"origin" "464.0 -1112.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 300
+{
+"origin" "592.0 -1112.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 301
+{
+"origin" "464.0 -1032.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 302
+{
+"origin" "592.0 -1048.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 303
+{
+"origin" "448.0 -824.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 304
+{
+"origin" "528.0 -816.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 305
+{
+"origin" "632.0 -880.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 306
+{
+"origin" "792.0 -816.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 307
+{
+"origin" "624.0 -976.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 308
+{
+"origin" "848.0 -984.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 309
+{
+"origin" "720.0 -1112.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 310
+{
+"origin" "848.0 -1112.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 311
+{
+"origin" "720.0 -1200.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 312
+{
+"origin" "848.0 -1312.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 313
+{
+"origin" "720.0 -1368.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 314
+{
+"origin" "976.0 -1240.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 315
+{
+"origin" "1032.0 -1032.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 316
+{
+"origin" "976.0 -984.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 317
+{
+"origin" "976.0 -856.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 318
+{
+"origin" "1104.0 -856.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 319
+{
+"origin" "1104.0 -984.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 320
+{
+"origin" "1168.0 -1144.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 321
+{
+"origin" "1232.0 -944.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 322
+{
+"origin" "1232.0 -856.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 323
+{
+"origin" "-232.0 168.0 56.0"
+"classname" "node_pathnode"
+}
+// entity 324
+{
+"origin" "-104.0 168.0 56.0"
+"classname" "node_pathnode"
+}
+// entity 325
+{
+"origin" "-232.0 296.0 80.0"
+"classname" "node_pathnode"
+}
+// entity 326
+{
+"origin" "-104.0 296.0 80.0"
+"classname" "node_pathnode"
+}
+// entity 327
+{
+"origin" "-232.0 424.0 120.0"
+"classname" "node_pathnode"
+}
+// entity 328
+{
+"origin" "-104.0 424.0 120.0"
+"classname" "node_pathnode"
+}
+// entity 329
+{
+"origin" "-232.0 552.0 152.0"
+"classname" "node_pathnode"
+}
+// entity 330
+{
+"origin" "-104.0 552.0 152.0"
+"classname" "node_pathnode"
+}
+// entity 331
+{
+"origin" "-232.0 680.0 168.0"
+"classname" "node_pathnode"
+}
+// entity 332
+{
+"origin" "-104.0 680.0 168.0"
+"classname" "node_pathnode"
+}
+// entity 333
+{
+"classname" "node_pathnode"
+"origin" "8.0 632.0 168.0"
+}
+// entity 334
+{
+"classname" "node_pathnode"
+"origin" "136.0 632.0 168.0"
+}
+// entity 335
+{
+"classname" "node_pathnode"
+"origin" "264.0 632.0 168.0"
+}
+// entity 336
+{
+"classname" "node_pathnode"
+"origin" "8.0 504.0 168.0"
+}
+// entity 337
+{
+"classname" "node_pathnode"
+"origin" "136.0 504.0 168.0"
+}
+// entity 338
+{
+"classname" "node_pathnode"
+"origin" "264.0 424.0 168.0"
+}
+// entity 339
+{
+"classname" "node_pathnode"
+"origin" "40.0 408.0 168.0"
+}
+// entity 340
+{
+"classname" "node_pathnode"
+"origin" "136.0 376.0 168.0"
+}
+// entity 341
+{
+"classname" "node_pathnode"
+"origin" "8.0 248.0 168.0"
+}
+// entity 342
+{
+"classname" "node_pathnode"
+"origin" "136.0 248.0 168.0"
+}
+// entity 343
+{
+"classname" "node_pathnode"
+"origin" "232.0 216.0 168.0"
+}
+// entity 344
+{
+"origin" "696.0 -816.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 345
+{
+"origin" "344.0 -944.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 346
+{
+"origin" "888.0 -840.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 347
+{
+"origin" "872.0 -904.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 348
+{
+"origin" "1080.0 -1184.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 349
+{
+"classname" "node_pathnode"
+"origin" "1224.0 -664.0 68.1"
+}
+// entity 350
+{
+"classname" "node_pathnode"
+"origin" "1224.0 -408.0 105.9"
+}
+// entity 351
+{
+"classname" "node_pathnode"
+"origin" "1240.0 -40.0 143.8"
+}
+// entity 352
+{
+"classname" "node_pathnode"
+"origin" "1232.0 -256.0 143.8"
+}
+// entity 353
+{
+"classname" "node_pathnode"
+"origin" "920.0 88.0 170.7"
+}
+// entity 354
+{
+"classname" "node_pathnode"
+"origin" "1216.0 616.0 168.0"
+}
+// entity 355
+{
+"classname" "node_pathnode"
+"origin" "1224.0 504.0 168.0"
+}
+// entity 356
+{
+"classname" "node_pathnode"
+"origin" "424.0 688.0 168.0"
+}
+// entity 357
+{
+"classname" "node_pathnode"
+"origin" "544.0 680.0 168.0"
+}
+// entity 358
+{
+"classname" "node_pathnode"
+"origin" "680.0 688.0 168.0"
+}
+// entity 359
+{
+"classname" "node_pathnode"
+"origin" "-920.0 672.0 168.0"
+}
+// entity 360
+{
+"classname" "node_pathnode"
+"origin" "-1024.0 672.0 168.0"
+}
+// entity 361
+{
+"classname" "node_pathnode"
+"origin" "-746.0 100.0 32.0"
+}
+// entity 362
+{
+"origin" "-832.0 -2096.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 363
+{
+"origin" "-272.0 -1928.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 364
+{
+"origin" "-248.0 -2008.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 365
+{
+"origin" "-248.0 -2096.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 366
+{
+"origin" "-248.0 -2184.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 367
+{
+"origin" "-256.0 -1544.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 368
+{
+"origin" "-256.0 -1672.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 369
+{
+"origin" "-256.0 -1800.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 370
+{
+"origin" "280.0 -1416.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 371
+{
+"origin" "-40.0 -1112.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 372
+{
+"origin" "-128.0 -1112.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 373
+{
+"classname" "node_pathnode"
+"origin" "-760.0 680.0 168.0"
+}
+// entity 374
+{
+"classname" "node_pathnode"
+"origin" "-632.0 680.0 168.0"
+}
+// entity 375
+{
+"classname" "node_pathnode"
+"origin" "-504.0 680.0 168.0"
+}
+// entity 376
+{
+"classname" "node_pathnode"
+"origin" "-376.0 680.0 168.0"
+}
+// entity 377
+{
+"classname" "node_pathnode"
+"origin" "648.0 1040.0 168.0"
+}
+// entity 378
+{
+"classname" "node_pathnode"
+"origin" "1288.0 968.0 168.0"
+}
+// entity 379
+{
+"classname" "node_pathnode"
+"origin" "-1016.0 1048.0 168.0"
+}
+// entity 380
+{
+"classname" "node_pathnode"
+"origin" "1232.0 -120.0 143.8"
+}
+// entity 381
+{
+"origin" "1232.0 -1064.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 382
+{
+"origin" "376.0 -1168.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 383
+{
+"origin" "-200.0 -1424.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 384
+{
+"origin" "-1136.0 -1352.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 385
+{
+"origin" "-1520.0 -1736.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 386
+{
+"origin" "-1520.0 -848.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 387
+{
+"classname" "node_pathnode"
+"origin" "-1472.0 -336.0 32.0"
+}
+// entity 388
+{
+"classname" "node_pathnode"
+"origin" "-1912.0 -312.0 32.0"
+}
+// entity 389
+{
+"classname" "node_pathnode"
+"origin" "-1912.0 -184.0 32.0"
+}
+// entity 390
+{
+"classname" "node_pathnode"
+"origin" "-1912.0 -56.0 32.0"
+}
+// entity 391
+{
+"classname" "node_pathnode"
+"origin" "-1912.0 72.0 32.0"
+}
+// entity 392
+{
+"classname" "node_pathnode"
+"origin" "-1720.0 72.0 32.0"
+}
+// entity 393
+{
+"classname" "node_pathnode"
+"origin" "-1592.0 72.0 32.0"
+}
+// entity 394
+{
+"classname" "node_pathnode"
+"origin" "-1464.0 72.0 32.0"
+}
+// entity 395
+{
+"origin" "-648.0 -40.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 396
+{
+"origin" "-848.0 -40.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 397
+{
+"origin" "16.0 32.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 398
+{
+"classname" "node_pathnode"
+"origin" "40.0 336.0 168.0"
+}
+// entity 399
+{
+"classname" "node_pathnode"
+"origin" "-680.0 816.0 168.0"
+}
+// entity 400
+{
+"classname" "node_pathnode"
+"origin" "704.0 768.0 168.0"
+}
+// entity 401
+{
+"classname" "node_pathnode"
+"origin" "1392.0 888.0 168.0"
+}
+// entity 402
+{
+"classname" "node_pathnode"
+"origin" "1328.0 680.0 168.0"
+}
+// entity 403
+{
+"classname" "node_pathnode"
+"origin" "-1344.0 -320.0 32.0"
+}
+// entity 404
+{
+"classname" "node_pathnode"
+"origin" "-1472.0 616.0 176.0"
+}
+// entity 405
+{
+"classname" "node_pathnode"
+"origin" "-1560.0 584.0 200.6"
+}
+// entity 406
+{
+"classname" "node_pathnode"
+"origin" "-1560.0 456.0 200.6"
+}
+// entity 407
+{
+"classname" "node_pathnode"
+"origin" "-1688.0 584.0 214.4"
+}
+// entity 408
+{
+"classname" "node_pathnode"
+"origin" "-1688.0 456.0 214.4"
+}
+// entity 409
+{
+"classname" "node_pathnode"
+"origin" "-1560.0 328.0 200.6"
+}
+// entity 410
+{
+"classname" "node_pathnode"
+"origin" "-1560.0 200.0 200.6"
+}
+// entity 411
+{
+"classname" "node_pathnode"
+"origin" "-1688.0 328.0 214.4"
+}
+// entity 412
+{
+"classname" "node_pathnode"
+"origin" "-1688.0 200.0 200.6"
+}
+// entity 413
+{
+"classname" "node_pathnode"
+"origin" "-1816.0 584.0 228.2"
+}
+// entity 414
+{
+"classname" "node_pathnode"
+"origin" "-1816.0 456.0 228.2"
+}
+// entity 415
+{
+"classname" "node_pathnode"
+"origin" "-1944.0 584.0 242.0"
+}
+// entity 416
+{
+"classname" "node_pathnode"
+"origin" "-1944.0 456.0 228.2"
+}
+// entity 417
+{
+"classname" "node_pathnode"
+"origin" "-1816.0 328.0 214.4"
+}
+// entity 418
+{
+"classname" "node_pathnode"
+"origin" "-1816.0 200.0 200.6"
+}
+// entity 419
+{
+"classname" "node_pathnode"
+"origin" "-1944.0 328.0 214.4"
+}
+// entity 420
+{
+"classname" "node_pathnode"
+"origin" "-1944.0 200.0 200.6"
+}
+// entity 421
+{
+"origin" "760.0 -1280.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 422
+{
+"classname" "node_pathnode"
+"origin" "-592.0 -80.0 32.0"
+}
+// entity 423
+{
+"origin" "-508.0 -136.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 424
+{
+"classname" "node_pathnode"
+"origin" "-676.0 100.0 32.0"
+}
+// entity 425
+{
+"origin" "-544.0 848.0 168.0"
+"classname" "node_pathnode"
+}
+// entity 426
+{
+"origin" "-432.0 848.0 168.0"
+"classname" "node_pathnode"
+}
+// entity 427
+{
+"classname" "node_pathnode"
+"origin" "-1032.0 832.0 168.0"
+}
+// entity 428
+{
+"classname" "node_pathnode"
+"origin" "-312.0 1040.0 168.0"
+}
+// entity 429
+{
+"classname" "node_pathnode"
+"origin" "-312.0 976.0 168.0"
+}
+// entity 430
+{
+"classname" "node_pathnode"
+"origin" "-304.0 656.0 168.0"
+}
+// entity 431
+{
+"classname" "node_pathnode"
+"origin" "-328.0 568.0 168.0"
+}
+// entity 432
+{
+"classname" "node_pathnode"
+"origin" "-1148.0 656.0 168.0"
+}
+// entity 433
+{
+"classname" "node_pathnode"
+"origin" "-1208.0 684.0 168.0"
+}
+// entity 434
+{
+"classname" "node_pathnode"
+"origin" "-724.0 664.0 168.0"
+}
+// entity 435
+{
+"origin" "848.0 152.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 436
+{
+"origin" "848.0 96.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 437
+{
+"origin" "816.0 -32.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 438
+{
+"origin" "720.0 -16.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 439
+{
+"origin" "560.0 96.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 440
+{
+"origin" "552.0 16.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 441
+{
+"origin" "472.0 64.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 442
+{
+"origin" "432.0 -32.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 443
+{
+"origin" "816.0 -200.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 444
+{
+"origin" "776.0 -264.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 445
+{
+"origin" "680.0 -96.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 446
+{
+"origin" "688.0 -288.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 447
+{
+"origin" "560.0 -184.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 448
+{
+"origin" "560.0 -288.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 449
+{
+"origin" "432.0 -288.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 450
+{
+"origin" "808.0 -544.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 451
+{
+"origin" "432.0 -416.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 452
+{
+"origin" "432.0 -544.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 453
+{
+"origin" "816.0 -672.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 454
+{
+"origin" "688.0 -672.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 455
+{
+"origin" "560.0 -672.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 456
+{
+"origin" "432.0 -672.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 457
+{
+"origin" "784.0 72.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 458
+{
+"classname" "node_pathnode"
+"origin" "-400.0 544.0 168.0"
+}
+// entity 459
+{
+"classname" "node_pathnode"
+"origin" "-464.0 584.0 168.0"
+}
+// entity 460
+{
+"classname" "node_pathnode"
+"origin" "-528.0 592.0 168.0"
+}
+// entity 461
+{
+"classname" "node_pathnode"
+"origin" "-592.0 544.0 168.0"
+}
+// entity 462
+{
+"classname" "node_pathnode"
+"origin" "-664.0 568.0 168.0"
+}
+// entity 463
+{
+"classname" "node_pathnode"
+"origin" "-784.0 568.0 168.0"
+}
+// entity 464
+{
+"classname" "node_pathnode"
+"origin" "-728.0 608.0 168.0"
+}
+// entity 465
+{
+"classname" "node_pathnode"
+"origin" "-856.0 544.0 168.0"
+}
+// entity 466
+{
+"classname" "node_pathnode"
+"origin" "-912.0 584.0 168.0"
+}
+// entity 467
+{
+"classname" "node_pathnode"
+"origin" "-1000.0 584.0 168.0"
+}
+// entity 468
+{
+"classname" "node_pathnode"
+"origin" "-1064.0 544.0 168.0"
+}
+// entity 469
+{
+"classname" "node_pathnode"
+"origin" "-1136.0 592.0 168.0"
+}
+// entity 470
+{
+"classname" "node_pathnode"
+"origin" "-144.0 1112.0 168.0"
+}
+// entity 471
+{
+"classname" "node_pathnode"
+"origin" "-16.0 1112.0 168.0"
+}
+// entity 472
+{
+"classname" "node_pathnode"
+"origin" "672.0 -352.0 176.0"
+}
+// entity 473
+{
+"classname" "node_pathnode"
+"origin" "584.0 -352.0 176.0"
+}
+// entity 474
+{
+"classname" "node_pathnode"
+"origin" "672.0 -448.0 152.0"
+}
+// entity 475
+{
+"classname" "node_pathnode"
+"origin" "584.0 -448.0 152.0"
+}
+// entity 476
+{
+"classname" "node_pathnode"
+"origin" "672.0 -536.0 96.0"
+}
+// entity 477
+{
+"classname" "node_pathnode"
+"origin" "584.0 -536.0 96.0"
+}
+// entity 478
+{
+"classname" "node_pathnode"
+"origin" "672.0 -648.0 64.0"
+}
+// entity 479
+{
+"classname" "node_pathnode"
+"origin" "584.0 -648.0 64.0"
+}
+// entity 480
+{
+"classname" "node_pathnode"
+"origin" "792.0 -648.0 64.0"
+}
+// entity 481
+{
+"classname" "node_pathnode"
+"origin" "816.0 -528.0 64.0"
+}
+// entity 482
+{
+"classname" "node_pathnode"
+"origin" "464.0 -648.0 64.0"
+}
+// entity 483
+{
+"classname" "node_pathnode"
+"origin" "464.0 -528.0 64.0"
+}
+// entity 484
+{
+"origin" "496.0 -168.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 485
+{
+"origin" "480.0 -96.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 486
+{
+"origin" "640.0 8.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 487
+{
+"origin" "648.0 -168.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 488
+{
+"origin" "808.0 -104.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 489
+{
+"origin" "768.0 -480.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 490
+{
+"origin" "744.0 -384.0 176.0"
+"classname" "node_pathnode"
+}
+// entity 491
+{
+"origin" "-560.0 -576.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 492
+{
+"origin" "-632.0 -576.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 493
+{
+"origin" "-696.0 -528.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 494
+{
+"origin" "-696.0 -400.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 495
+{
+"origin" "-768.0 -380.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 496
+{
+"origin" "-840.0 -396.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 497
+{
+"origin" "-840.0 -524.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 498
+{
+"origin" "-840.0 -652.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 499
+{
+"origin" "-840.0 -780.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 500
+{
+"origin" "-712.0 -716.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 501
+{
+"origin" "-712.0 -612.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 502
+{
+"origin" "-840.0 -908.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 503
+{
+"origin" "-840.0 -1036.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 504
+{
+"origin" "-840.0 -1164.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 505
+{
+"origin" "-840.0 -1292.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 506
+{
+"origin" "-840.0 -1420.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 507
+{
+"origin" "-840.0 -1548.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 508
+{
+"origin" "-968.0 -1548.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 509
+{
+"origin" "-968.0 -1420.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 510
+{
+"origin" "-1064.0 -1500.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 511
+{
+"origin" "-1124.0 -1500.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 512
+{
+"origin" "652.0 -728.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 513
+{
+"origin" "652.0 -804.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 514
+{
+"origin" "596.0 -728.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 515
+{
+"origin" "596.0 -804.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 516
+{
+"origin" "-1048.0 -1696.0 48.0"
+"classname" "node_pathnode"
+}
+// entity 517
+{
+"origin" "-984.0 -1624.0 48.0"
+"classname" "node_pathnode"
+}
+// entity 518
+{
+"classname" "node_pathnode"
+"origin" "1068.0 900.0 168.0"
+}
+// entity 519
+{
+"classname" "node_pathnode"
+"origin" "1096.0 968.0 168.0"
+}
+// entity 520
+{
+"classname" "node_pathnode"
+"origin" "968.0 1048.0 168.0"
+}
+// entity 521
+{
+"classname" "node_pathnode"
+"origin" "704.0 1016.0 168.0"
+}
+// entity 522
+{
+"classname" "node_pathnode"
+"origin" "704.0 968.0 168.0"
+}
+// entity 523
+{
+"origin" "696.0 -1016.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 524
+{
+"origin" "-1352.0 -984.0 48.0"
+"classname" "node_pathnode"
+}
+// entity 525
+{
+"classname" "node_pathnode"
+"origin" "-1512.0 -1160.0 100.4"
+}
+// entity 526
+{
+"classname" "node_pathnode"
+"origin" "-1512.0 -1032.0 100.8"
+}
+// entity 527
+{
+"origin" "-1208.0 -2080.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 528
+{
+"origin" "-1296.0 -2080.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 529
+{
+"origin" "-1336.0 -1984.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 530
+{
+"origin" "952.0 -1224.0 32.0"
+"angles" "0 120 0"
+"classname" "node_cover_stand"
+}
+// entity 531
+{
+"origin" "1108.0 -1144.0 32.0"
+"angles" "0 120 0"
+"classname" "node_cover_stand"
+}
+// entity 532
+{
+"angles" "0 180 0"
+"origin" "800.0 -916.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 533
+{
+"angles" "0 2.50448e-006 0"
+"origin" "700.0 -916.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 534
+{
+"angles" "0 2.50448e-006 0"
+"origin" "376.0 -932.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 535
+{
+"angles" "0 180 0"
+"origin" "554.0 -924.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 536
+{
+"angles" "0 270 0"
+"origin" "502.0 -834.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 537
+{
+"angles" "0 270 0"
+"origin" "424.0 -840.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 538
+{
+"angles" "0 180 0"
+"origin" "1200.0 -552.0 84.0"
+"classname" "node_cover_stand"
+}
+// entity 539
+{
+"angles" "0 2.50448e-006 0"
+"origin" "1100.0 -552.0 84.0"
+"classname" "node_cover_stand"
+}
+// entity 540
+{
+"classname" "node_cover_stand"
+"origin" "1112.0 -180.0 128.0"
+"angles" "0 2.50448e-006 0"
+}
+// entity 541
+{
+"classname" "node_cover_stand"
+"origin" "1208.0 -180.0 128.0"
+"angles" "0 180 0"
+}
+// entity 542
+{
+"classname" "node_cover_stand"
+"origin" "936.0 -30.0 160.0"
+"angles" "0 2.50448e-006 0"
+}
+// entity 543
+{
+"classname" "node_cover_stand"
+"origin" "1032.0 -30.0 160.0"
+"angles" "0 180 0"
+}
+// entity 544
+{
+"classname" "node_cover_stand"
+"origin" "1106.0 512.0 168.0"
+"angles" "0 2.50448e-006 0"
+}
+// entity 545
+{
+"classname" "node_cover_stand"
+"origin" "1200.0 512.0 172.0"
+"angles" "0 180 0"
+}
+// entity 546
+{
+"angles" "0 270 0"
+"origin" "156.0 -1344.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 547
+{
+"angles" "0 90 0"
+"origin" "-74.0 -1230.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 548
+{
+"angles" "0 270 0"
+"origin" "-82.0 -1120.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 549
+{
+"angles" "0 90 0"
+"origin" "424.0 -1016.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 550
+{
+"angles" "0 90 0"
+"origin" "504.0 -1008.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 551
+{
+"angles" "0 180 0"
+"origin" "-260.0 -2098.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 552
+{
+"angles" "0 2.50448e-006 0"
+"origin" "-368.0 -2096.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 553
+{
+"angles" "0 90 0"
+"origin" "-828.0 -2088.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 554
+{
+"angles" "0 180 0"
+"origin" "-1156.0 -1516.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 555
+{
+"angles" "0 90 0"
+"origin" "-1172.0 -2060.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 556
+{
+"angles" "0 180 0"
+"origin" "-1158.0 -672.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 557
+{
+"angles" "0 180 0"
+"origin" "-1160.0 -884.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 558
+{
+"angles" "0 90 0"
+"origin" "-1744.0 -290.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 559
+{
+"angles" "0 270 0"
+"origin" "-1746.0 -190.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 560
+{
+"angles" "0 90 0"
+"origin" "-734.0 -146.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 561
+{
+"angles" "0 180 0"
+"origin" "-650.0 -98.0 32.0"
+"classname" "node_cover_stand"
+}
+// entity 562
+{
+"angles" "0 2.50448e-006 0"
+"origin" "-834.0 -94.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 563
+{
+"angles" "0 2.50448e-006 0"
+"origin" "-822.0 10.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 564
+{
+"angles" "0 180 0"
+"origin" "-654.0 10.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 565
+{
+"angles" "0 270 0"
+"origin" "-742.0 58.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 566
+{
+"angles" "0 90 0"
+"origin" "-720.0 -34.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 567
+{
+"angles" "0 270 0"
+"origin" "-752.0 -46.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 568
+{
+"classname" "node_cover_stand"
+"origin" "550.0 786.0 168.0"
+"angles" "0 270 0"
+}
+// entity 569
+{
+"classname" "node_cover_stand"
+"origin" "554.0 690.0 168.0"
+"angles" "0 90 0"
+}
+// entity 570
+{
+"classname" "node_cover_stand"
+"origin" "246.0 952.0 168.0"
+"angles" "0 270 0"
+}
+// entity 571
+{
+"classname" "node_cover_stand"
+"origin" "252.0 856.0 168.0"
+"angles" "0 90 0"
+}
+// entity 572
+{
+"classname" "node_cover_stand"
+"origin" "-487.5 888.0 168.0"
+"angles" "0 90 0"
+}
+// entity 573
+{
+"angles" "0 270 0"
+"origin" "-485.5 988.0 168.0"
+"classname" "node_cover_stand"
+}
+// entity 574
+{
+"angles" "0 270 0"
+"origin" "-1030.5 794.0 168.0"
+"classname" "node_cover_stand"
+}
+// entity 575
+{
+"angles" "0 90 0"
+"origin" "-1016.5 694.0 176.0"
+"classname" "node_cover_stand"
+}
+// entity 576
+{
+"classname" "node_cover_stand"
+"origin" "260.0 474.0 168.0"
+"angles" "0 90 0"
+}
+// entity 577
+{
+"classname" "node_cover_stand"
+"origin" "260.0 558.0 168.0"
+"angles" "0 270 0"
+}
+// entity 578
+{
+"classname" "node_cover_stand"
+"origin" "274.0 264.0 168.0"
+"angles" "0 90 0"
+}
+// entity 579
+{
+"classname" "node_cover_stand"
+"origin" "274.0 366.0 168.0"
+"angles" "0 270 0"
+}
+// entity 580
+{
+"classname" "node_cover_stand"
+"origin" "-52.0 462.0 168.0"
+"angles" "0 270 0"
+}
+// entity 581
+{
+"angles" "0 2.50448e-006 0"
+"origin" "-466.0 86.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 582
+{
+"angles" "0 180 0"
+"origin" "-382.0 72.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 583
+{
+"angles" "0 270 0"
+"origin" "334.0 -246.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 584
+{
+"angles" "0 90 0"
+"origin" "332.0 -330.0 28.0"
+"classname" "node_cover_stand"
+}
+// entity 585
+{
+"angles" "0 255 0"
+"origin" "-159.2 -143.7 28.0"
+"classname" "node_cover_stand"
+}
+// entity 586
+{
+"angles" "0 75 0"
+"origin" "-182.8 -224.3 28.0"
+"classname" "node_cover_stand"
+}
+// entity 587
+{
+"angles" "0 180 0"
+"origin" "241.2 37.7 28.0"
+"classname" "node_cover_stand"
+}
+// entity 588
+{
+"angles" "0 180 0"
+"origin" "83.2 -232.3 28.0"
+"classname" "node_cover_stand"
+}
+// entity 589
+{
+"angles" "0 90 0"
+"origin" "-40.3 -355.2 28.0"
+"classname" "node_cover_stand"
+}
+// entity 590
+{
+"angles" "0 45 0"
+"origin" "-134.5 -315.8 28.0"
+"classname" "node_cover_stand"
+}
+// entity 591
+{
+"angles" "0 307.65 0"
+"origin" "-116.3 -133.6 28.0"
+"classname" "node_cover_stand"
+}
+// entity 592
+{
+"classname" "node_cover_stand"
+"origin" "-495.5 616.0 176.0"
+"angles" "0 90 0"
+}
+// entity 593
+{
+"classname" "node_cover_stand"
+"origin" "-671.5 616.0 176.0"
+"angles" "0 90 0"
+}
+// entity 594
+{
+"classname" "node_cover_stand"
+"origin" "-296.0 551.5 176.0"
+"angles" "0 2.50448e-006 0"
+}
+// entity 595
+{
+"classname" "node_cover_stand"
+"origin" "-775.5 616.0 176.0"
+"angles" "0 90 0"
+}
+// entity 596
+{
+"classname" "node_cover_stand"
+"origin" "-959.5 616.0 176.0"
+"angles" "0 90 0"
+}
+// entity 597
+{
+"classname" "node_cover_stand"
+"origin" "-1160.0 552.5 176.0"
+"angles" "0 180 0"
+}
+// entity 598
+{
+"classname" "node_cover_stand"
+"origin" "-52.0 526.0 168.0"
+"angles" "0 90 0"
+}
+// entity 599
+{
+"classname" "node_cover_stand"
+"origin" "-52.0 610.0 168.0"
+"angles" "0 270 0"
+}
+// entity 600
+{
+"angles" "0 90 0"
+"origin" "728.0 -216.0 184.0"
+"classname" "node_cover_stand"
+}
+// entity 601
+{
+"angles" "0 270 0"
+"origin" "728.0 -128.0 184.0"
+"classname" "node_cover_stand"
+}
+// entity 602
+{
+"angles" "0 2.50448e-006 0"
+"origin" "514.0 -104.0 184.0"
+"classname" "node_cover_stand"
+}
+// entity 603
+{
+"angles" "0 345 0"
+"origin" "-823.3 -454.4 28.0"
+"classname" "node_cover_stand"
+}
+// entity 604
+{
+"angles" "0 275.025 0"
+"origin" "-772.3 -404.7 28.0"
+"classname" "node_cover_stand"
+}
+// entity 605
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "554.0 -872.0 32.0"
+}
+// entity 606
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "800.0 -872.0 32.0"
+}
+// entity 607
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 2.50448e-006 0"
+"origin" "704.0 -968.0 32.0"
+}
+// entity 608
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 2.50448e-006 0"
+"origin" "376.0 -976.0 32.0"
+}
+// entity 609
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "1200.0 -508.0 84.0"
+}
+// entity 610
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 2.50448e-006 0"
+"origin" "1104.0 -604.0 84.0"
+}
+// entity 611
+{
+"spawnflags" "4"
+"origin" "1112.0 -252.0 128.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 612
+{
+"spawnflags" "4"
+"origin" "1208.0 -124.0 128.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 613
+{
+"spawnflags" "4"
+"origin" "936.0 -94.0 160.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 614
+{
+"spawnflags" "4"
+"origin" "1032.0 42.0 160.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 615
+{
+"spawnflags" "4"
+"origin" "1106.0 466.0 168.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 616
+{
+"spawnflags" "4"
+"origin" "1200.0 562.0 172.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 617
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "104.0 -1344.0 32.0"
+}
+// entity 618
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "-24.0 -1230.0 32.0"
+}
+// entity 619
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "-134.0 -1120.0 32.0"
+}
+// entity 620
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "236.0 -1386.0 32.0"
+}
+// entity 621
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 2.50448e-006 0"
+"origin" "-168.0 -1182.0 32.0"
+}
+// entity 622
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 30 0"
+"origin" "859.5 -1204.0 32.0"
+}
+// entity 623
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 210 0"
+"origin" "1157.0 -1033.0 32.0"
+}
+// entity 624
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "1140.0 -472.0 88.0"
+}
+// entity 625
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "1144.0 -86.0 152.0"
+}
+// entity 626
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "1000.0 -134.0 136.0"
+}
+// entity 627
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "1140.0 596.0 180.0"
+}
+// entity 628
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "-260.0 -2032.0 32.0"
+}
+// entity 629
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 2.50448e-006 0"
+"origin" "-368.0 -2160.0 32.0"
+}
+// entity 630
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "-330.0 -2196.0 32.0"
+}
+// entity 631
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "-784.0 -2088.0 32.0"
+}
+// entity 632
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "-750.0 -2022.0 32.0"
+}
+// entity 633
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "-1156.0 -1472.0 32.0"
+}
+// entity 634
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "-1224.0 -1432.0 32.0"
+}
+// entity 635
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 2.50448e-006 0"
+"origin" "-1278.0 -2006.0 32.0"
+}
+// entity 636
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "-1158.0 -632.0 32.0"
+}
+// entity 637
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "-1220.0 -596.0 32.0"
+}
+// entity 638
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "-1160.0 -844.0 32.0"
+}
+// entity 639
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "-1220.0 -808.0 32.0"
+}
+// entity 640
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "-1696.0 -290.0 32.0"
+}
+// entity 641
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "-1794.0 -190.0 32.0"
+}
+// entity 642
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "-1664.0 -224.0 32.0"
+}
+// entity 643
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "-688.0 -146.0 32.0"
+}
+// entity 644
+{
+"spawnflags" "4"
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "-786.0 58.0 32.0"
+}
+// entity 645
+{
+"spawnflags" "4"
+"origin" "488.0 786.0 168.0"
+"angles" "0 270 0"
+"classname" "node_cover_right"
+}
+// entity 646
+{
+"spawnflags" "4"
+"origin" "616.0 690.0 168.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 647
+{
+"spawnflags" "4"
+"origin" "648.0 754.0 168.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 648
+{
+"spawnflags" "4"
+"origin" "194.0 952.0 168.0"
+"angles" "0 270 0"
+"classname" "node_cover_right"
+}
+// entity 649
+{
+"spawnflags" "4"
+"origin" "302.0 856.0 168.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 650
+{
+"spawnflags" "4"
+"origin" "162.0 888.0 168.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 651
+{
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "-437.5 888.0 168.0"
+"spawnflags" "4"
+}
+// entity 652
+{
+"spawnflags" "4"
+"origin" "-568.5 922.0 168.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 653
+{
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "-535.5 988.0 168.0"
+"spawnflags" "4"
+}
+// entity 654
+{
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "-1079.5 794.0 168.0"
+"spawnflags" "4"
+}
+// entity 655
+{
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "-968.5 694.0 176.0"
+"spawnflags" "4"
+}
+// entity 656
+{
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "-935.0 760.5 176.0"
+"spawnflags" "4"
+}
+// entity 657
+{
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "-288.0 1056.0 176.0"
+"spawnflags" "0"
+}
+// entity 658
+{
+"classname" "node_cover_right"
+"angles" "0 2.50448e-006 0"
+"origin" "96.0 1088.0 176.0"
+"spawnflags" "0"
+}
+// entity 659
+{
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "320.0 664.0 176.0"
+"spawnflags" "0"
+}
+// entity 660
+{
+"classname" "node_cover_right"
+"angles" "0 180 0"
+"origin" "832.0 632.0 176.0"
+"spawnflags" "0"
+}
+// entity 661
+{
+"classname" "node_cover_right"
+"angles" "0 270 0"
+"origin" "1280.0 656.0 176.0"
+"spawnflags" "0"
+}
+// entity 662
+{
+"classname" "node_cover_right"
+"angles" "0 90 0"
+"origin" "864.0 -800.0 56.0"
+"spawnflags" "0"
+}
+// entity 663
+{
+"spawnflags" "0"
+"origin" "352.0 -768.0 40.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 664
+{
+"spawnflags" "0"
+"origin" "160.0 -1104.0 40.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 665
+{
+"spawnflags" "0"
+"origin" "-352.0 -1072.0 40.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 666
+{
+"spawnflags" "0"
+"origin" "192.0 -592.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 667
+{
+"spawnflags" "0"
+"origin" "-208.0 -1440.0 40.0"
+"angles" "0 270 0"
+"classname" "node_cover_right"
+}
+// entity 668
+{
+"spawnflags" "0"
+"origin" "-608.0 -1760.0 40.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 669
+{
+"spawnflags" "0"
+"origin" "-576.0 -2128.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 670
+{
+"spawnflags" "0"
+"origin" "-1088.0 -304.0 40.0"
+"angles" "0 270 0"
+"classname" "node_cover_right"
+}
+// entity 671
+{
+"spawnflags" "0"
+"origin" "-1536.0 -400.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 672
+{
+"spawnflags" "0"
+"origin" "-1200.0 144.0 48.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 673
+{
+"spawnflags" "0"
+"origin" "-1504.0 112.0 48.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 674
+{
+"spawnflags" "0"
+"origin" "-576.0 -336.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 675
+{
+"spawnflags" "0"
+"origin" "224.0 -768.0 40.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 676
+{
+"spawnflags" "0"
+"origin" "-384.0 -656.0 40.0"
+"angles" "0 270 0"
+"classname" "node_cover_right"
+}
+// entity 677
+{
+"spawnflags" "0"
+"origin" "-550.0 -928.0 40.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 678
+{
+"spawnflags" "0"
+"origin" "-288.0 112.0 48.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 679
+{
+"spawnflags" "0"
+"origin" "-96.0 144.0 48.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 680
+{
+"spawnflags" "0"
+"origin" "-224.0 -524.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 681
+{
+"spawnflags" "4"
+"origin" "-174.0 -556.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 682
+{
+"spawnflags" "0"
+"origin" "108.2 -144.2 48.0"
+"angles" "0 144 0"
+"classname" "node_cover_right"
+}
+// entity 683
+{
+"spawnflags" "24"
+"origin" "804.0 -292.0 184.0"
+"angles" "0 270 0"
+"classname" "node_cover_right"
+}
+// entity 684
+{
+"spawnflags" "24"
+"origin" "426.0 -234.0 184.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 685
+{
+"spawnflags" "24"
+"origin" "604.0 68.0 184.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_right"
+}
+// entity 686
+{
+"spawnflags" "24"
+"origin" "696.0 -760.0 48.0"
+"angles" "0 270 0"
+"classname" "node_cover_right"
+}
+// entity 687
+{
+"spawnflags" "0"
+"origin" "-804.0 -808.0 40.0"
+"angles" "0 270 0"
+"classname" "node_cover_right"
+}
+// entity 688
+{
+"spawnflags" "0"
+"origin" "-928.0 -1304.0 40.0"
+"angles" "0 90 0"
+"classname" "node_cover_right"
+}
+// entity 689
+{
+"spawnflags" "0"
+"origin" "-1080.0 -1548.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_right"
+}
+// entity 690
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "376.0 -876.0 32.0"
+}
+// entity 691
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "704.0 -872.0 32.0"
+}
+// entity 692
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "800.0 -968.0 32.0"
+}
+// entity 693
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "554.0 -976.0 32.0"
+}
+// entity 694
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "1104.0 -508.0 84.0"
+}
+// entity 695
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "1200.0 -604.0 84.0"
+}
+// entity 696
+{
+"spawnflags" "4"
+"origin" "1208.0 -252.0 128.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 697
+{
+"spawnflags" "4"
+"origin" "1112.0 -124.0 128.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 698
+{
+"spawnflags" "4"
+"origin" "1032.0 -94.0 160.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 699
+{
+"spawnflags" "4"
+"origin" "936.0 42.0 160.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 700
+{
+"spawnflags" "4"
+"origin" "1200.0 466.0 172.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 701
+{
+"spawnflags" "4"
+"origin" "1106.0 562.0 168.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 702
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "200.0 -1346.0 32.0"
+}
+// entity 703
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-24.0 -1120.0 32.0"
+}
+// entity 704
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-132.0 -1230.0 32.0"
+}
+// entity 705
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "68.0 -1384.0 32.0"
+}
+// entity 706
+{
+"spawnflags" "0"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "12.0 -1188.0 32.0"
+}
+// entity 707
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "1144.0 -640.0 64.0"
+}
+// entity 708
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "1144.0 -292.0 116.0"
+}
+// entity 709
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "1140.0 428.0 184.0"
+}
+// entity 710
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "996.0 76.0 160.0"
+}
+// entity 711
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "-260.0 -2162.0 32.0"
+}
+// entity 712
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "-368.0 -2032.0 32.0"
+}
+// entity 713
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-882.0 -2088.0 32.0"
+}
+// entity 714
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "-914.0 -2024.0 32.0"
+}
+// entity 715
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "-1156.0 -1570.0 32.0"
+}
+// entity 716
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-1224.0 -1612.0 32.0"
+}
+// entity 717
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-1238.0 -2060.0 32.0"
+}
+// entity 718
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "-1072.0 -2010.0 32.0"
+}
+// entity 719
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "-1158.0 -730.0 32.0"
+}
+// entity 720
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-1220.0 -764.0 32.0"
+}
+// entity 721
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "-1160.0 -938.0 32.0"
+}
+// entity 722
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-1222.0 -970.0 32.0"
+}
+// entity 723
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-1794.0 -290.0 32.0"
+}
+// entity 724
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-1696.0 -190.0 32.0"
+}
+// entity 725
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "-1826.0 -226.0 32.0"
+}
+// entity 726
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-796.0 -146.0 32.0"
+}
+// entity 727
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-688.0 -46.0 32.0"
+}
+// entity 728
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-784.0 -34.0 32.0"
+}
+// entity 729
+{
+"spawnflags" "4"
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-688.0 58.0 32.0"
+}
+// entity 730
+{
+"spawnflags" "4"
+"origin" "616.0 786.0 168.0"
+"angles" "0 270 0"
+"classname" "node_cover_left"
+}
+// entity 731
+{
+"spawnflags" "4"
+"origin" "488.0 690.0 168.0"
+"angles" "0 90 0"
+"classname" "node_cover_left"
+}
+// entity 732
+{
+"spawnflags" "4"
+"origin" "456.0 754.0 168.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 733
+{
+"spawnflags" "4"
+"origin" "302.0 952.0 168.0"
+"angles" "0 270 0"
+"classname" "node_cover_left"
+}
+// entity 734
+{
+"spawnflags" "4"
+"origin" "194.0 856.0 168.0"
+"angles" "0 90 0"
+"classname" "node_cover_left"
+}
+// entity 735
+{
+"spawnflags" "4"
+"origin" "336.0 888.0 168.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 736
+{
+"spawnflags" "4"
+"origin" "-535.5 890.0 168.0"
+"angles" "0 90 0"
+"classname" "node_cover_left"
+}
+// entity 737
+{
+"spawnflags" "4"
+"origin" "-404.0 924.5 168.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 738
+{
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-437.5 988.0 168.0"
+"spawnflags" "4"
+}
+// entity 739
+{
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-969.5 794.0 168.0"
+"spawnflags" "4"
+}
+// entity 740
+{
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-1079.5 694.0 176.0"
+"spawnflags" "4"
+}
+// entity 741
+{
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "-1113.0 759.5 176.0"
+"spawnflags" "4"
+}
+// entity 742
+{
+"spawnflags" "0"
+"origin" "-256.0 1088.0 176.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 743
+{
+"spawnflags" "0"
+"origin" "128.0 1056.0 176.0"
+"angles" "0 90 0"
+"classname" "node_cover_left"
+}
+// entity 744
+{
+"spawnflags" "0"
+"origin" "288.0 632.0 176.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 745
+{
+"spawnflags" "0"
+"origin" "800.0 664.0 176.0"
+"angles" "0 270 0"
+"classname" "node_cover_left"
+}
+// entity 746
+{
+"spawnflags" "0"
+"origin" "1248.0 624.0 176.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 747
+{
+"spawnflags" "0"
+"origin" "896.0 -768.0 56.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 748
+{
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "384.0 -800.0 40.0"
+"spawnflags" "0"
+}
+// entity 749
+{
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "192.0 -1072.0 40.0"
+"spawnflags" "0"
+}
+// entity 750
+{
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-320.0 -1104.0 40.0"
+"spawnflags" "0"
+}
+// entity 751
+{
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "-240.0 -1472.0 40.0"
+"spawnflags" "0"
+}
+// entity 752
+{
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "-576.0 -1728.0 40.0"
+"spawnflags" "0"
+}
+// entity 753
+{
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-608.0 -2096.0 40.0"
+"spawnflags" "0"
+}
+// entity 754
+{
+"classname" "node_cover_left"
+"angles" "0 2.50448e-006 0"
+"origin" "-1120.0 -336.0 40.0"
+"spawnflags" "0"
+}
+// entity 755
+{
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-1568.0 -368.0 40.0"
+"spawnflags" "0"
+}
+// entity 756
+{
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-1168.0 112.0 48.0"
+"spawnflags" "0"
+}
+// entity 757
+{
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "-1472.0 144.0 48.0"
+"spawnflags" "0"
+}
+// entity 758
+{
+"classname" "node_cover_left"
+"angles" "0 270 0"
+"origin" "-608.0 -304.0 40.0"
+"spawnflags" "0"
+}
+// entity 759
+{
+"spawnflags" "0"
+"origin" "160.0 -560.0 40.0"
+"angles" "0 270 0"
+"classname" "node_cover_left"
+}
+// entity 760
+{
+"spawnflags" "0"
+"origin" "224.0 -640.0 40.0"
+"angles" "0 270 0"
+"classname" "node_cover_left"
+}
+// entity 761
+{
+"spawnflags" "0"
+"origin" "-384.0 -784.0 40.0"
+"angles" "0 90 0"
+"classname" "node_cover_left"
+}
+// entity 762
+{
+"spawnflags" "0"
+"origin" "-549.5 -800.0 40.0"
+"angles" "0 270 0"
+"classname" "node_cover_left"
+}
+// entity 763
+{
+"classname" "node_cover_left"
+"angles" "0 180 0"
+"origin" "-256.0 144.0 48.0"
+"spawnflags" "0"
+}
+// entity 764
+{
+"classname" "node_cover_left"
+"angles" "0 90 0"
+"origin" "-64.0 112.0 48.0"
+"spawnflags" "0"
+}
+// entity 765
+{
+"spawnflags" "0"
+"origin" "-352.0 -592.0 40.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 766
+{
+"spawnflags" "0"
+"origin" "-322.0 -524.0 40.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 767
+{
+"classname" "node_cover_left"
+"angles" "0 232.5 0"
+"origin" "101.3 -96.3 48.0"
+"spawnflags" "0"
+}
+// entity 768
+{
+"angles" "0 180 0"
+"classname" "node_cover_left"
+"origin" "258.0 70.5 48.0"
+"spawnflags" "0"
+}
+// entity 769
+{
+"spawnflags" "24"
+"origin" "804.0 -452.0 184.0"
+"angles" "0 90 0"
+"classname" "node_cover_left"
+}
+// entity 770
+{
+"spawnflags" "24"
+"origin" "426.0 -134.0 184.0"
+"angles" "0 270 0"
+"classname" "node_cover_left"
+}
+// entity 771
+{
+"spawnflags" "24"
+"origin" "764.0 68.0 184.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 772
+{
+"spawnflags" "24"
+"origin" "552.0 -760.0 48.0"
+"angles" "0 270 0"
+"classname" "node_cover_left"
+}
+// entity 773
+{
+"spawnflags" "0"
+"origin" "-1080.0 -1460.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 774
+{
+"spawnflags" "0"
+"origin" "-896.0 -1272.0 40.0"
+"angles" "0 180 0"
+"classname" "node_cover_left"
+}
+// entity 775
+{
+"spawnflags" "0"
+"origin" "-804.0 -848.0 40.0"
+"angles" "0 90 0"
+"classname" "node_cover_left"
+}
+// entity 776
+{
+"spawnflags" "0"
+"origin" "-616.0 -620.0 40.0"
+"angles" "0 2.50448e-006 0"
+"classname" "node_cover_left"
+}
+// entity 777
+{
+"origin" "1004.0 -1200.0 32.0"
+"angles" "0 120 0"
+"classname" "node_cover_crouch"
+}
+// entity 778
+{
+"origin" "1056.0 -1176.0 32.0"
+"angles" "0 120 0"
+"classname" "node_cover_crouch"
+}
+// entity 779
+{
+"origin" "1160.0 -1116.0 32.0"
+"angles" "0 120 0"
+"classname" "node_cover_crouch"
+}
+// entity 780
+{
+"origin" "924.0 -1094.0 32.0"
+"angles" "0 15 0"
+"classname" "node_cover_crouch"
+}
+// entity 781
+{
+"origin" "990.0 -1072.0 32.0"
+"angles" "0 195 0"
+"classname" "node_cover_crouch"
+}
+// entity 782
+{
+"origin" "393.0 -1243.7 32.0"
+"angles" "0 33 0"
+"classname" "node_cover_crouch"
+}
+// entity 783
+{
+"origin" "449.0 -1202.3 32.0"
+"angles" "0 213 0"
+"classname" "node_cover_crouch"
+}
+// entity 784
+{
+"origin" "410.3 -1303.7 32.0"
+"angles" "0 0.999995 0"
+"classname" "node_cover_crouch"
+}
+// entity 785
+{
+"origin" "479.7 -1298.3 32.0"
+"angles" "0 181 0"
+"classname" "node_cover_crouch"
+}
+// entity 786
+{
+"origin" "-344.0 -1657.1 32.0"
+"angles" "0 75 0"
+"classname" "node_cover_crouch"
+}
+// entity 787
+{
+"origin" "-330.0 -1588.9 32.0"
+"angles" "0 255 0"
+"classname" "node_cover_crouch"
+}
+// entity 788
+{
+"origin" "-1432.0 -1869.1 32.0"
+"angles" "0 75 0"
+"classname" "node_cover_crouch"
+}
+// entity 789
+{
+"origin" "-1418.0 -1800.9 32.0"
+"angles" "0 255 0"
+"classname" "node_cover_crouch"
+}
+// entity 790
+{
+"origin" "-1381.0 -1894.6 32.0"
+"angles" "0 27 0"
+"classname" "node_cover_crouch"
+}
+// entity 791
+{
+"origin" "-1321.0 -1859.4 32.0"
+"angles" "0 207 0"
+"classname" "node_cover_crouch"
+}
+// entity 792
+{
+"origin" "-1464.1 -195.0 32.0"
+"angles" "0 45 0"
+"classname" "node_cover_crouch"
+}
+// entity 793
+{
+"origin" "-1417.9 -143.0 32.0"
+"angles" "0 225 0"
+"classname" "node_cover_crouch"
+}
+// entity 794
+{
+"origin" "-1430.0 -244.0 32.0"
+"angles" "0 15 0"
+"classname" "node_cover_crouch"
+}
+// entity 795
+{
+"origin" "-1364.0 -222.0 32.0"
+"angles" "0 195 0"
+"classname" "node_cover_crouch"
+}
+// entity 796
+{
+"angles" "0 90 0"
+"origin" "-1328.0 704.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 797
+{
+"angles" "0 270 0"
+"origin" "-1328.0 768.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 798
+{
+"angles" "0 90 0"
+"origin" "-1328.0 80.0 40.0"
+"classname" "node_cover_crouch"
+}
+// entity 799
+{
+"angles" "0 270 0"
+"origin" "-1328.0 144.0 40.0"
+"classname" "node_cover_crouch"
+}
+// entity 800
+{
+"angles" "0 90 0"
+"origin" "-1215.0 -1257.5 40.0"
+"classname" "node_cover_crouch"
+}
+// entity 801
+{
+"angles" "0 270 0"
+"origin" "-1215.0 -1193.5 40.0"
+"classname" "node_cover_crouch"
+}
+// entity 802
+{
+"angles" "0 2.50448e-006 0"
+"origin" "-1008.0 896.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 803
+{
+"angles" "0 180 0"
+"origin" "-944.0 896.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 804
+{
+"angles" "0 270 0"
+"origin" "-536.0 760.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 805
+{
+"angles" "0 90 0"
+"origin" "-536.0 696.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 806
+{
+"angles" "0 270 0"
+"origin" "-456.0 760.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 807
+{
+"angles" "0 90 0"
+"origin" "-456.0 696.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 808
+{
+"angles" "0 270 0"
+"origin" "1168.0 952.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 809
+{
+"angles" "0 90 0"
+"origin" "1168.0 888.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 810
+{
+"angles" "0 240 0"
+"origin" "-600.0 779.7 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 811
+{
+"angles" "0 60 0"
+"origin" "-632.0 724.3 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 812
+{
+"angles" "0 270 0"
+"origin" "992.0 672.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 813
+{
+"angles" "0 90 0"
+"origin" "992.0 608.0 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 814
+{
+"angles" "0 225 0"
+"origin" "1259.1 921.6 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 815
+{
+"angles" "0 45 0"
+"origin" "1213.9 876.4 168.0"
+"classname" "node_cover_crouch"
+}
+// entity 816
+{
+"origin" "-473.0 34.5 32.0"
+"angles" "0 345 0"
+"classname" "node_cover_crouch"
+}
+// entity 817
+{
+"origin" "-406.0 15.0 32.0"
+"angles" "0 165 0"
+"classname" "node_cover_crouch"
+}
+// entity 818
+{
+"angles" "0 360 0"
+"spawnflags" "0"
+"origin" "-608.5 -152.0 32.0"
+"classname" "node_cover_crouch"
+}
+// entity 819
+{
+"angles" "0 180 0"
+"spawnflags" "0"
+"origin" "-543.5 -152.0 32.0"
+"classname" "node_cover_crouch"
+}
+// entity 820
+{
+"angles" "0 180 0"
+"spawnflags" "0"
+"origin" "-2.0 -38.5 32.0"
+"classname" "node_cover_crouch"
+}
+// entity 821
+{
+"angles" "0 270 0"
+"spawnflags" "0"
+"origin" "-4.5 397.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 822
+{
+"angles" "0 90 0"
+"spawnflags" "0"
+"origin" "-9.0 330.5 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 823
+{
+"angles" "0 90 0"
+"spawnflags" "0"
+"origin" "-54.5 301.5 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 824
+{
+"angles" "0 270 0"
+"spawnflags" "0"
+"origin" "221.5 369.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 825
+{
+"angles" "0 90 0"
+"spawnflags" "0"
+"origin" "219.0 302.5 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 826
+{
+"angles" "0 180 0"
+"spawnflags" "0"
+"origin" "-56.0 248.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 827
+{
+"angles" "0 180 0"
+"spawnflags" "0"
+"origin" "-56.0 200.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 828
+{
+"angles" "0 270 0"
+"spawnflags" "0"
+"origin" "88.0 152.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 829
+{
+"angles" "0 270 0"
+"spawnflags" "0"
+"origin" "264.0 152.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 830
+{
+"angles" "0 2.50448e-006 0"
+"origin" "856.0 -184.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 831
+{
+"angles" "0 2.50448e-006 0"
+"origin" "856.0 -96.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 832
+{
+"angles" "0 2.50448e-006 0"
+"origin" "856.0 8.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 833
+{
+"angles" "0 2.50448e-006 0"
+"origin" "556.0 -54.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 834
+{
+"angles" "0 180 0"
+"origin" "392.0 -40.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 835
+{
+"angles" "0 270 0"
+"origin" "544.0 -760.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 836
+{
+"angles" "0 270 0"
+"origin" "648.0 -760.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 837
+{
+"angles" "0 2.50448e-006 0"
+"origin" "856.0 -608.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 838
+{
+"angles" "0 180 0"
+"origin" "392.0 -536.0 176.0"
+"classname" "node_cover_crouch"
+}
+// entity 839
+{
+"angles" "0 105 0"
+"origin" "-1397.2 -1095.4 40.0"
+"classname" "node_cover_crouch"
+}
+// entity 840
+{
+"angles" "0 285 0"
+"origin" "-1421.8 -1025.6 40.0"
+"classname" "node_cover_crouch"
+}
+// entity 841
+{
+"angles" "0 90 0"
+"origin" "-1445.2 -1147.4 40.0"
+"classname" "node_cover_crouch"
+}
+// entity 842
+{
+"targetname" "flag0_spawns"
+"classname" "script_origin"
+"angles" "0 165 0"
+"origin" "-328.0 -192.0 8.0"
+"_color" "0.2 0.1 0.8"
+}
+// entity 843
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-232.0 -312.0 8.0"
+"angles" "0 210 0"
+"classname" "script_origin"
+"targetname" "flag0_spawns"
+}
+// entity 844
+{
+"_color" "0.2 0.1 0.8"
+"origin" "88.0 -184.0 8.0"
+"angles" "0 15 0"
+"classname" "script_origin"
+"targetname" "flag0_spawns"
+}
+// entity 845
+{
+"target" "auto5"
+"_color" "0.2 0.1 0.8"
+"origin" "-56.0 -536.0 8.0"
+"angles" "0 90 0"
+"classname" "script_origin"
+"targetname" "flag0_spawns"
+}
+// entity 846
+{
+"_color" "0.2 0.1 0.8"
+"origin" "1044.0 900.0 144.0"
+"angles" "0 180 0"
+"classname" "script_origin"
+"targetname" "flag1_spawns"
+}
+// entity 847
+{
+"origin" "1144.0 824.0 144.0"
+"_color" "1 0.1 1"
+"classname" "script_origin"
+"targetname" "flag"
+"height" "100"
+"radius" "350"
+"target" "flag1_spawns"
+}
+// entity 848
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1432.0 -1992.0 0.0"
+"angles" "0 45 0"
+"classname" "script_origin"
+"targetname" "flag2_spawns"
+}
+// entity 849
+{
+"origin" "-1296.0 -1888.0 0.0"
+"_color" "1 0.1 1"
+"classname" "script_origin"
+"targetname" "flag"
+"height" "100"
+"radius" "350"
+"target" "flag2_spawns"
+}
+// entity 850
+{
+"_color" "0.2 0.1 0.8"
+"origin" "776.0 -1256.0 0.0"
+"angles" "0 120 0"
+"classname" "script_origin"
+"targetname" "flag3_spawns"
+}
+// entity 851
+{
+"target" "flag3_spawns"
+"origin" "704.0 -1104.0 0.0"
+"_color" "1 0.1 1"
+"classname" "script_origin"
+"targetname" "flag"
+"height" "100"
+"radius" "300"
+}
+// entity 852
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1928.0 -112.0 0.0"
+"angles" "0 360 0"
+"classname" "script_origin"
+"targetname" "flag4_spawns"
+}
+// entity 853
+{
+"target" "flag4_spawns"
+"origin" "-1728.0 -120.0 0.0"
+"_color" "1 0.1 1"
+"classname" "script_origin"
+"targetname" "flag"
+"height" "100"
+"radius" "350"
+}
+// entity 854
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1920.0 88.0 8.0"
+"angles" "0 315 0"
+"classname" "script_origin"
+"targetname" "flag4_spawns"
+}
+// entity 855
+{
+"target" "auto9"
+"_color" "0.2 0.1 0.8"
+"origin" "-1920.0 -328.0 8.0"
+"angles" "0 30 0"
+"classname" "script_origin"
+"targetname" "flag4_spawns"
+}
+// entity 856
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1616.0 24.0 0.0"
+"angles" "0 330 0"
+"classname" "script_origin"
+"targetname" "flag4_spawns"
+}
+// entity 857
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1730.7 97.4 8.0"
+"angles" "0 269 0"
+"classname" "script_origin"
+"targetname" "flag4_spawns"
+}
+// entity 858
+{
+"target" "auto8"
+"_color" "0.2 0.1 0.8"
+"origin" "-1728.0 -336.0 8.0"
+"angles" "0 360 0"
+"classname" "script_origin"
+"targetname" "flag4_spawns"
+}
+// entity 859
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1592.0 -152.0 0.0"
+"angles" "0 360 0"
+"classname" "script_origin"
+"targetname" "flag4_spawns"
+}
+// entity 860
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1440.0 -1928.0 0.0"
+"angles" "0 60 0"
+"classname" "script_origin"
+"targetname" "flag2_spawns"
+}
+// entity 861
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1352.0 -2000.0 0.0"
+"angles" "0 360 0"
+"classname" "script_origin"
+"targetname" "flag2_spawns"
+}
+// entity 862
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1168.0 -1912.0 0.0"
+"angles" "0 360 0"
+"classname" "script_origin"
+"targetname" "flag2_spawns"
+}
+// entity 863
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1384.0 -1736.0 0.0"
+"angles" "0 90 0"
+"classname" "script_origin"
+"targetname" "flag2_spawns"
+}
+// entity 864
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1136.0 -1768.0 8.0"
+"angles" "0 45 0"
+"classname" "script_origin"
+"targetname" "flag2_spawns"
+}
+// entity 865
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1392.0 -2072.0 8.0"
+"angles" "0 45 0"
+"classname" "script_origin"
+"targetname" "flag2_spawns"
+}
+// entity 866
+{
+"_color" "0.2 0.1 0.8"
+"origin" "-1512.0 -1880.0 8.0"
+"angles" "0 60 0"
+"classname" "script_origin"
+"targetname" "flag2_spawns"
+}
+// entity 867
+{
+"_color" "0.2 0.1 0.8"
+"origin" "1080.0 760.0 144.0"
+"angles" "0 270 0"
+"classname" "script_origin"
+"targetname" "flag1_spawns"
+}
+// entity 868
+{
+"target" "auto7"
+"_color" "0.2 0.1 0.8"
+"origin" "1400.0 816.0 144.0"
+"angles" "0 180 0"
+"classname" "script_origin"
+"targetname" "flag1_spawns"
+}
+// entity 869
+{
+"target" "auto11"
+"_color" "0.2 0.1 0.8"
+"origin" "1384.0 1016.0 152.0"
+"angles" "0 225 0"
+"classname" "script_origin"
+"targetname" "flag1_spawns"
+}
+// entity 870
+{
+"target" "auto6"
+"_color" "0.2 0.1 0.8"
+"origin" "1368.0 680.0 152.0"
+"angles" "0 180 0"
+"classname" "script_origin"
+"targetname" "flag1_spawns"
+}
+// entity 871
+{
+"_color" "0.2 0.1 0.8"
+"origin" "1176.0 1024.0 152.0"
+"angles" "0 225 0"
+"classname" "script_origin"
+"targetname" "flag1_spawns"
+}
+// entity 872
+{
+"_color" "0.2 0.1 0.8"
+"origin" "528.0 -1288.0 0.0"
+"angles" "0 195 0"
+"classname" "script_origin"
+"targetname" "flag3_spawns"
+}
+// entity 873
+{
+"_color" "0.2 0.1 0.8"
+"origin" "632.0 -936.0 0.0"
+"angles" "0 90 0"
+"classname" "script_origin"
+"targetname" "flag3_spawns"
+}
+// entity 874
+{
+"_color" "0.2 0.1 0.8"
+"origin" "840.0 -1056.0 0.0"
+"angles" "0 45 0"
+"classname" "script_origin"
+"targetname" "flag3_spawns"
+}
+// entity 875
+{
+"_color" "0.2 0.1 0.8"
+"origin" "512.0 -1104.0 0.0"
+"angles" "0 180 0"
+"classname" "script_origin"
+"targetname" "flag3_spawns"
+}
+// entity 876
+{
+"angles" "0 45 30"
+"classname" "misc_prefab"
+"model" "sp_conquest/top_down_org.map"
+"origin" "824.0 -1264.0 1504.0"
+}
+// entity 877
+{
+"model" "su_welltown_geo.map"
+"classname" "misc_prefab"
+"origin" "-208.0 -256.0 8.0"
+"angles" "0 90 0"
+}
+// entity 878
+{
+"targetname" "under_map_trigg"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( -3280 2680 -520 ) ( -3656 2680 -520 ) ( -3656 2304 -520 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3648 2304 -480 ) ( -3648 2680 -480 ) ( -3272 2680 -480 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2168 -3632 -560 ) ( 2544 -3632 -560 ) ( 2544 -3632 -568 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2544 -3632 -560 ) ( 2544 -3256 -560 ) ( 2544 -3256 -568 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3280 2680 -560 ) ( -3656 2680 -560 ) ( -3656 2680 -568 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3656 2680 -560 ) ( -3656 2304 -560 ) ( -3656 2304 -568 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 879
+{
+"origin" "-3440.0 2608.0 1720.0"
+"model" "prefabs/minimap_corner.map"
+"classname" "misc_prefab"
+}
+// entity 880
+{
+"origin" "2560.0 -3392.0 1720.0"
+"model" "prefabs/minimap_corner.map"
+"classname" "misc_prefab"
+}
+// entity 881
+{
+"angles" "0 217 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_medic.map"
+"origin" "40.0 -328.0 8.0"
+}
+// entity 882
+{
+"angles" "0 25 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_medic.map"
+"origin" "764.0 -1364.0 8.0"
+}
+// entity 883
+{
+"angles" "0 2.50448e-006 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_medic.map"
+"origin" "-1524.0 -1980.0 8.0"
+}
+// entity 884
+{
+"angles" "0 90 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_ammo.map"
+"origin" "-1348.0 -2084.0 8.0"
+}
+// entity 885
+{
+"angles" "0 90 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_ammo.map"
+"origin" "-78.0 -70.0 8.0"
+}
+// entity 886
+{
+"targetname" "auto5"
+"_color" "0.2 0.1 0.8"
+"origin" "-56.0 -536.0 272.0"
+"angles" "0 90 0"
+"classname" "script_origin"
+}
+// entity 887
+{
+"classname" "script_origin"
+"angles" "0 180 0"
+"origin" "1368.0 680.0 512.0"
+"_color" "0.2 0.1 0.8"
+"targetname" "auto6"
+}
+// entity 888
+{
+"target" "auto10"
+"classname" "script_origin"
+"angles" "0 180 0"
+"origin" "1408.0 824.0 424.0"
+"_color" "0.2 0.1 0.8"
+"targetname" "auto7"
+}
+// entity 889
+{
+"targetname" "auto9"
+"_color" "0.2 0.1 0.8"
+"origin" "-1920.0 -328.0 248.0"
+"angles" "0 30 0"
+"classname" "script_origin"
+}
+// entity 890
+{
+"targetname" "auto8"
+"_color" "0.2 0.1 0.8"
+"origin" "-1728.0 -336.0 200.0"
+"angles" "0 360 0"
+"classname" "script_origin"
+}
+// entity 891
+{
+"classname" "script_origin"
+"angles" "0 150 0"
+"origin" "1088.0 768.0 488.0"
+"_color" "0.2 0.1 0.8"
+"targetname" "auto10"
+}
+// entity 892
+{
+"origin" "-200.0 -56.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 893
+{
+"angles" "0 120 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_ammo.map"
+"origin" "808.0 -1332.0 8.0"
+}
+// entity 894
+{
+"origin" "-1300.0 -2016.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 895
+{
+"origin" "-1524.0 -2028.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 896
+{
+"origin" "-1464.0 -2084.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 897
+{
+"origin" "-1524.0 -2088.0 32.0"
+"classname" "node_pathnode"
+}
+// entity 898
+{
+"angles" "0  90 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_medic.map"
+"origin" "1114.0 908.0 144.0"
+}
+// entity 899
+{
+"angles" "0 225 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_ammo.map"
+"origin" "1280.0 852.0 144.0"
+}
+// entity 900
+{
+"classname" "node_pathnode"
+"origin" "964.0 908.0 168.0"
+}
+// entity 901
+{
+"classname" "node_pathnode"
+"origin" "832.0 924.0 176.0"
+}
+// entity 902
+{
+"classname" "node_pathnode"
+"origin" "836.0 992.0 176.0"
+}
+// entity 903
+{
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_medic.map"
+"origin" "-1862.0 -364.0 8.0"
+}
+// entity 904
+{
+"angles" "0 270 0"
+"classname" "misc_prefab"
+"model" "sp_conquest/crate_ammo.map"
+"origin" "-1844.0 100.0 8.0"
+}
+// entity 905
+{
+"targetname" "auto11"
+"_color" "0.2 0.1 0.8"
+"origin" "1384.0 1016.0 408.0"
+"angles" "0 225 0"
+"classname" "script_origin"
+}

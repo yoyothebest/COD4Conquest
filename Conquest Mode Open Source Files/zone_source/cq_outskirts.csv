@@ -1,0 +1,14 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/cq_outskirts.d3dbsp
+rawfile,maps/cq_outskirts.gsc
+localize,cq_outskirts
+sound,common,cq_outskirts,!all_sp
+sound,generic,cq_outskirts,!all_sp
+sound,voiceovers,cq_outskirts,!all_sp
+sound,requests,cq_outskirts,!all_sp
+sound,mapname,cq_outskirts,all_sp
+xmodel,viewmodel_base_viewhands
+weapon,sp/mp5
+material,compass_map_cq_outskirts
+rawfile,vision/cq_outskirts.vision

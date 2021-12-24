@@ -1,0 +1,13 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/cq_basic.d3dbsp
+rawfile,maps/cq_basic.gsc
+localize,cq_basic
+sound,common,cq_basic,!all_sp
+sound,generic,cq_basic,!all_sp
+sound,voiceovers,cq_basic,!all_sp
+sound,requests,cq_basic,!all_sp
+sound,mapname,cq_basic,all_sp
+xmodel,viewmodel_base_viewhands
+weapon,sp/mp5
+material,compass_map_cq_basic

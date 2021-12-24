@@ -1,0 +1,402 @@
+#include "ui/menudef.h"
+
+#define PAUSESCREEN_MAP_RECT 	-150 230 130 120 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP //415 280 130 120 0 0
+#define PAUSESCREEN_MAP_RECT_FULL	-625 15 450 450 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_TOP
+#define PLATFORM_OFFSET			(-20)
+
+#define PAUSESCREEN_OPTION_SIZE 120 20
+
+{
+	// Pause menu
+	menuDef
+	{
+		name			"pausedmenu"
+		fullScreen		0
+		rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+		focusColor		COLOR_FOCUSED
+		allowedBinding	"pause"
+		onOpen
+		{
+			showMenu "pausedbkgnd"
+			showMenu "objectiveinfo"
+			showMenu "overheadmap"
+			focusfirst
+			nosavehide "saveandquit"
+			saveAvailableHide "quit";
+		}
+		onClose
+		{
+			hideMenu "pausedbkgnd"
+			hideMenu "objectiveinfo"
+			hideMenu "overheadmap"
+		}
+		onEsc
+		{
+			close pausedmenu;
+		}
+
+		// "Paused" text
+		itemDef
+		{
+			name			"pausedMsg"
+			text			"@MENU_PAUSED_CAP"
+			rect			-150 40 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_TITLE
+			textscale		TEXTSIZE_TITLE
+			textfont		UI_FONT_DEFAULT
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			name			"resumegame"
+			text			"@MENU_RESUMEGAME"
+			textaligny		-2
+			type			ITEM_TYPE_BUTTON
+			style			WINDOW_STYLE_EMPTY
+			rect			-150 84 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			onFocus
+			{
+				play "mouse_over";
+			}
+			action
+			{
+				play "mouse_click";
+				close pausedmenu;
+			}
+		}
+		itemDef
+		{
+			text			"@MENU_CONTROLS"
+			textaligny		-2
+			type			ITEM_TYPE_BUTTON
+			style			 WINDOW_STYLE_EMPTY
+			rect			-150 104 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			when ( dvarstring( "credits_active" ) != "1" );
+			onFocus
+			{
+				play "mouse_over";
+			}
+			action
+			{
+				play "mouse_click";
+				open "options_look";
+				close pausedmenu;
+			}
+		}
+		itemDef
+		{
+			text			"@MENU_OPTIONS"
+			textaligny		-2
+			type			ITEM_TYPE_BUTTON
+			style			WINDOW_STYLE_EMPTY
+			rect			-150 124 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			when ( dvarstring( "credits_active" ) != "1" );
+			onFocus
+			{
+				play "mouse_over";
+			}
+			action
+			{
+				play "mouse_click";
+				execnow "set ui_allow_graphic_change 1";
+				open "options_graphics";
+				close pausedmenu;
+			}
+		}
+		itemDef
+		{
+			name			"restartlevel"
+			text			"@MENU_RESTART_LEVEL"
+			textaligny		-2
+			type			ITEM_TYPE_BUTTON
+			style			WINDOW_STYLE_EMPTY
+			rect			-150 144 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			//exp			rect Y( PLATFORM_OFFSET+184+int(min(dvarInt(g_gameskill),1)*20)-20 );
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			onFocus			{	play "mouse_over";	}
+			action	{
+				play "mouse_click";
+				close pausedmenu;
+				open "restart_warning";
+			}
+		}
+		itemDef
+		{
+			name			"saveandquit"
+			text			"@PLATFORM_QUIT"
+			textaligny		-2
+			type			ITEM_TYPE_BUTTON
+			style			WINDOW_STYLE_EMPTY
+			rect			-150 164 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			//exp				rect Y( PLATFORM_OFFSET+204+int(min(dvarInt(g_gameskill),1)*20)-20 );
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			onFocus
+			{
+				play "mouse_over";
+			}
+			action
+			{
+				play "mouse_click";
+				close pausedmenu;
+				open "savegame_warning_noprofile";
+			}
+		}
+		itemDef
+		{
+			name			"quit"
+			text			"@PLATFORM_QUIT"
+			textaligny		-2
+			type			ITEM_TYPE_BUTTON
+			style			WINDOW_STYLE_EMPTY
+			rect			-150 164 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			//exp				rect Y( PLATFORM_OFFSET+204+int(min(dvarInt(g_gameskill),1)*20)-20 );
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textfont		UI_FONT_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			onFocus
+			{
+				play "mouse_over";
+			}
+			action
+			{
+				play "mouse_click";
+				close pausedmenu;
+				open "savegame_warning_noprofile";
+			}
+		}
+		
+
+
+	}
+
+	// Pause menu background... separate menu so that it can draw behind the objective menu
+	menuDef
+	{
+		name			"pausedbkgnd"
+		fullScreen		0
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		blurWorld		4.8
+
+
+		// gradient_top
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 0 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_top"
+			visible			1
+			decoration
+		}
+
+		// gradient_bottom
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			0 480 854 75 HORIZONTAL_ALIGN_FULLSCREEN 0
+			background		"gradient_bottom"
+			visible			1
+			decoration
+		}
+
+		#ifndef PC
+			#include "ui/navcontrols.menu"
+		#endif
+	}
+
+	// objective info... shown when paused, or on PC when "TAB" is held
+	menuDef
+	{
+		name			"objectiveinfo"
+		fullScreen		0
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+
+		itemDef
+		{
+			style			WINDOW_STYLE_FILLED
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			backcolor		0 0 0 0.50
+			visible			1
+			decoration
+		}
+	itemDef 
+	{ 
+		rect			PAUSESCREEN_MAP_RECT_FULL 
+		forecolor		1 1 1 1
+		background		"compass_map_default"
+		ownerdraw		CG_PLAYER_FULLMAP_MAP
+		visible			1
+		decoration
+	} 
+	itemDef 
+	{ 
+		rect			PAUSESCREEN_MAP_RECT_FULL
+		forecolor		1 1 1 1
+		background		"compassping_friendly"
+		ownerdraw		CG_PLAYER_FULLMAP_ACTORS
+		visible			1
+		decoration
+	} 
+	itemDef 
+	{ 
+		rect			PAUSESCREEN_MAP_RECT_FULL
+		forecolor		1 1 1 1
+		background		"compassping_player"
+		ownerdraw		CG_PLAYER_FULLMAP_PLAYER
+		visible			1
+		decoration
+	}
+	itemDef 
+	{ 
+		rect			PAUSESCREEN_MAP_RECT_FULL
+		forecolor		1 1 1 1
+		background		"objective_line"
+		ownerdraw		CG_PLAYER_FULLMAP_POINTERS
+		visible			1
+		decoration
+	} 
+
+
+
+	// ====================================================================
+	// CONQUEST PLAYER STATS
+	// ====================================================================
+	
+	itemDef
+	{
+		style			WINDOW_STYLE_FILLED
+			rect		-154 204 122 88 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+		backcolor		0 0 0 0.50
+		visible			1
+		decoration
+	}
+	
+	itemDef
+		{
+			name			"CONQUEST_PLAYER_STATS"
+			text			"@CONQUEST_STATS"
+			rect			-150 204 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_TITLE
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textfont		UI_FONT_DEFAULT
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			name			"player_kills"
+			text			"@CONQUEST_KILLS"
+			rect			-150 224 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textfont		UI_FONT_DEFAULT
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			decoration
+		}	
+		itemDef
+		{
+			name			"player_deaths"
+			text			"@CONQUEST_DEATHS"
+			rect			-150 244 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textfont		UI_FONT_DEFAULT
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			decoration
+		}	
+		itemDef
+		{
+			name			"player_captures"
+			text			"@CONQUEST_CAPTURES"
+			rect			-150 264 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textfont		UI_FONT_DEFAULT
+			textalign		ITEM_ALIGN_TOP_LEFT
+			visible			1
+			decoration
+		}	
+		//------------
+		itemDef
+		{
+			name			"player_kills_points"
+			rect			-75 224 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textfont		UI_FONT_DEFAULT
+			textalign		ITEM_ALIGN_TOP_LEFT
+			exp				text(dvarint("cq_player_match_kills"));
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			name			"player_deaths_points"
+			rect			-75 244 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textfont		UI_FONT_DEFAULT
+			textalign		ITEM_ALIGN_TOP_LEFT
+			exp				text(dvarint("cq_player_match_deaths"));
+			visible			1
+			decoration
+		}
+		itemDef
+		{
+			name			"player_captures_points"
+			rect			-75 264 PAUSESCREEN_OPTION_SIZE HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_DEFAULT
+			forecolor		COLOR_UNFOCUSED
+			textscale		TEXTSIZE_DEFAULT
+			textstyle		ITEM_TEXTSTYLE_SHADOWED
+			textfont		UI_FONT_DEFAULT
+			textalign		ITEM_ALIGN_TOP_LEFT
+			exp				text(dvarint("cq_player_match_captures"));
+			visible			1
+			decoration
+		}
+
+
+		
+	}
+}

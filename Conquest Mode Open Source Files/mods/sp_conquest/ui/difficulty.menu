@@ -1,0 +1,61 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_GROUP			"select_difficulty"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#undef CHOICE_HORIZONTAL_ALIGN
+#define CHOICE_HORIZONTAL_ALIGN	HORIZONTAL_ALIGN_CENTER
+#undef CHOICE_VERTICAL_ALIGN
+#define CHOICE_VERTICAL_ALIGN	VERTICAL_ALIGN_CENTER
+
+#include "ui_mp/popupstyle.inc"	
+#include "ui/choices_setup_popmenu.menu"
+
+#undef CHOICE_SIZE_Y
+#define CHOICE_SIZE_Y				22
+
+#undef A_BUTTON_SIZE
+#define A_BUTTON_SIZE				0.33
+
+#undef CHOICE_POPUP_BORDER_X
+#define CHOICE_POPUP_BORDER_X 		130
+
+#undef CHOICE_POPUP_TITLE_HEIGHT
+#define CHOICE_POPUP_TITLE_HEIGHT	16
+
+#undef CHOICE_X_START
+#define CHOICE_X_START				0
+
+#undef CHOICE_TEXTSIZE
+#define CHOICE_TEXTSIZE				TEXTSIZE_DEFAULT
+
+#undef CHOICE_POPUP_TITLE_TEXTSIZE
+#define CHOICE_POPUP_TITLE_TEXTSIZE		TEXTSIZE_TITLE
+
+#undef CHOICE_POPUP_SUBTITLE_TEXTSIZE
+#define CHOICE_POPUP_SUBTITLE_TEXTSIZE 	TEXTSIZE_DEFAULT
+
+#define UPDATE_GAMER_PROFILE	;
+
+	#undef CHOICE_SIZE_X
+	#define CHOICE_SIZE_X			160
+
+{
+		
+	#define LOCAL_START_LEVEL \
+		execondvarstringvalue ui_load_level cq_outskirts "map cq_outskirts"; \
+		execondvarstringvalue ui_load_level cq_welltown "map cq_welltown"; \
+		execondvarstringvalue ui_load_level cq_basic "map cq_basic";
+	
+	menuDef
+	{
+		CENTER_POPUP_SETUP_ONOPEN( popmenu_difficulty, 3.6, ;, ;, 1 )
+		CHOICE_POPMENU_TITLE( "@CONQUEST_PLAY_MAP" )
+		CHOICE_BUTTON_EX( 2, "@MENU_YES", execnow "difficultymedium"; UPDATE_GAMER_PROFILE close self; LOCAL_START_LEVEL, name newgame_regular; dvartest "g_gameskill"; focusdvar { "1" } )
+		CHOICE_BUTTON( 3, "@MENU_NO", close self )
+	}	
+
+}

@@ -1,0 +1,178 @@
+Call of Duty 4 Conquest Mode Dev-Log:
+
+Day 1: February 27, 2021.
+Worked on the flag system, managed to make a working system of capturable flag points that can be captured from both teams when neutral, 
+and become neutral if the other team owns it so they can be captured. Player has a temporary team change system so we can test both sides.
+cq_test is the testmap name we currently worked on. The flag model move method can be buggy and cause it to be misplaced and go under ground
+if the capture system is abused, meaning that player can go in and out of the radius and mess the move time.
+Also worked on a hud system that has a load bar for capturing. It also has good progress but is buggy af.
+The base of it works, we need to make some better flag.states in the capturing methods because sometimes it isn't showing what it should.
+The bar is not working at all, it shows but it doesn't load as it should. 
+Find a way to balance the amount of the bar properly with the values needed.
+
+Day 2: February 28, 2021.
+Fixed all problems in flag system, Flag system now works as intented without problems so far.
+All flag conditions and capture functions work together nicely along with NPC capturing.
+Player is also included in his team's flag touching check.
+Added a small debug hud for flags on the left. Remove later.
+Changed the flag prefab to fit a more dynamic system.
+No prefab is needed for the flag now, everything is now automatically set in code except the collision.
+There is one collision prefab that has 12 clip brushmodels that are attached to every flag automatically.
+Which means max flag number is 12. Everything else works with the flag init code. 
+Radius and height can be added in the script ent of the flag in radiant.
+Player spawns for each flag are also necessary now. At least 2 script_origins must be connected to the flag ent.
+Flag to spawns not reverse.
+Progressed the team system by adding a lot of hud elements.
+Team points bars on both sides, team icon, team point numbers (those might need realignment towards the top)
+and finally added a smart total flag hud display that shows how many flags are out there and what team is each.
+Also shows if they are being contested or captured by flashing the respective color.
+
+Day 3: March 1, 2021.
+Almost perfected Top hud. Most items are better aligned and the whole thing is more balanced.
+One last fix would be to put the capture flags in an order or something. But it's not mandatory.
+Started Gameplay Logic. Player now has a pre-match menu with 3 phases. Select Team(only available at match start)
+then select class placeholder and then worked on a spawn select. It's not what we've planned but it works good.
+Spawn select basically cycles with W and S like arrows between the player's team captured points.
+Once selected he can spawn in a BF1 MP style. When player "dies" (no health system yet) 
+he is put back in the intermission to select class and spawn.
+A placeholder menu for weapon classes and teams is set. Will be worked with details later.
+Bot logic has began and it's in an okayish state. Bots now have all the necessary spawn logic settings.
+They spawn in random flag points and sit still for now. We will work on a capture and combat logic later.
+They are all assigned in arrays and its now better calculated how they capture points.
+This works good with the team selection at start since we can put different aitypes.
+Player death npc also added. very basic so far.
+Spawn delay is now calculated by dividing the team's captured flags with the total flags in the map. if 0 then max time.
+
+Day 4: March 2, 2021.
+Expanded the bot spawn logic to create a bot behaviour. Now bots can play the game alone and come up with random victories or defeats like they should.
+Worked on the bot logic on moving to enemy flags, wait for them to be captured and then move to other enemy flags.
+The moving system uses the spawns so the spawns must be inside the flag radius. That is because the pole clip is solid and npcs cant walk through it.
+We may find a solution like maybe make it a player clip instead of metal clip. To be seen.
+Bots are now splitted to attackers and defenders. Attackers go from point to point and defenders stay at the spawn defending.
+The ratio is 2/3 of total team bots attackers and 1/3 defenders. Works okay so far may do changes to it only if necessary.
+Match logic implemented. Victory and Defeat are now possible. Ending HUD and game end functions added.
+Need to expand to them for it to be 100% solid also terminate any remaining necessary hud functions from before.
+End screen victory condition text was tricky to do because the structure of the function and the statements was messy from start
+but now it's all solid and working. Not very easy to edit, but good enough.
+We still get a strange error of no free actors and undefined when using maxteambots=15 but it seems harmless so far.
+Overall looks great so far, the bot gameplay is fun to watch. Welltown map also got this mode now.
+
+Day 5: March 3, 2021.
+Fixed the player spawn system. Player can now spawn properly, flags that are captured by enemies can't be selected, 
+If a player has a flag selected and while having it selected enemies capture it then it will switch to an ally flag.
+If new flags get captured he can cycle through them too. Also added a cool detail to the spawning movement.
+Spawns can now support 2 extra targeted orgs to bypass the spawn transition and avoid clipping through walls.
+It can either be 1 or 2 or none extra orgs. Their time is calculated by their distance which is cool.
+Finally found a solution for the defenders and attackers. The system now works alright. First spawners are all attackers
+and when the first flag is captured 1/3 of the whole team is defenders and finds flags to defend. Seems stable so far.
+Added pseudo health system and healthbar from survival mode. Player can now die and respawn as intented.
+There is also a added function that adds health to player, will be used from healthpacks later.
+healthpack_give_health()
+The problem with the npc spawners error could be due to too few spawner ents in the map. Try adding 3 for every spawner. 
+Will be alright to have 12 spawners.
+
+Day 6: March 4, 2021.
+Reduced the flag limit to 8 flags. Seems right.
+It is suggested to limit the npcs to 24 max. But the error still insists.
+Other than that we didn't work on cod4 conquest today.
+I ported conquest code in waw, and tried to set up a sp tetsmap to see if conquest works.
+After TONS of edits in the parts of the code that handle player it actually did go somewhere.
+It's buggy and it crashes but it sparked my interest to resume coop testing for waw.
+And we did get some results. seems like the get_players() function needs to be called constantly 
+for player definitions to work. Really good coop script results are in sab1 (sabotage from cod4 specops)
+We did extensive testings with good online pals who offered to test from ugx server,
+and got great functions out of it. Also managed to test with 4 players too! 
+Tomorrow we should resume conquest mode to finish it to a somewhat stable form.
+Menus should also be coded appropriately.
+
+Day 7: March 5, 2021.
+Worked on the weapon class menu for both teams, didn't give us too much trouble.
+Results are very satisfying and working grately.
+Other than that, today I tried to port all cod4 models, and textures in waw. 
+Big mistake, big failiure. 90% of textures didn't work. The mod tools got messed up,
+i tried to reinstall and now there are stuff missing for some reason.
+We saved all we could from our coop work and codes. But we can't compile anything for now.
+Let's officially give up waw since it wastes so much time and gives nothing.
+Last version of sabotage got sv and av playermodels which was cool but unfortunately couldn't work 100%.
+
+Day 8: March 6, 2021.
+Developed a class system for both player and npcs. NPCs skin is decided regarding the class they chose.
+Their class is totally random. No ratio or anything. Keep it this way. Only 2 spawners are now required only.
+One for axis and one for allies excluding the player npc one. 
+If player is allies, ally bots have sas skin and enemies spetsnaz. Enemies go to spetsnaz team and allies go to sas team same as player.
+If player is axis, ally bots have spetsnaz skin and enemies have sas. Enemies go to sas team and allies go to spetsnaz team same as player.
+No need for other npc aitypes. When player dies his npc now spawns like he should. He choses class based on player's class and is given player's current weapon.
+A cool camera trick is also implemented on player's death. Just like BF1942 player tracks upwards while looking on player's death position.
+When reached a certain height, and if player's killer exists and is alive, camera points to killer. Very useful function.
+Menu text buttons look better when selected.
+
+Day 9: March 7, 2021.
+Managed to make a fully functional and cool spawn select menu. It's a good replacement for the real time spawn.
+Map icons are nicely matching teams and npcs. Still trying to find out how to make enemies appear at all times, if that is even a choice.
+Flags are pointed in the map using objectives. Since objectives only show on map when on current state, they are all current causing the objective lines to show up.
+To prevent that I replaced the objective_line image with a transparent image. It will require mod but it's fine anyway.
+The mission objectives when pressing tab have the objectives all on top of the other. It will later be countered using edited objective_info menu
+which will show the fullmap and the flags as planned. Colors will be fixed to green vs red which is okay. 
+Modifications to the mode can be allowed by users so they can set their own map icons and team colors.
+Other than that, these are the final steps, we need to balance out some defenders and go2flag logics to add some more variety on the paths.
+Then implement the healthpacks and ammopacks weapons, build mod, and test. Then ready for release.
+
+Day 10: March 9, 2021.
+Setup poses scene of each AI class and took screenshots and imported images in mod. 
+Added them in menu and resized the image item of characters to fit aspect ratio.
+Created ammo and health crates like BF1942 working only for player. Can't seem to find a way to make weapon of ammo and health pack.
+We may scrap the idea and leave medic class medpack-less. On the other hand, lack of ammo pack on support class is okay.
+Experimented with the idea to make a brush trigger on spawns but didn't work too well. Keeping radius trigger just like bf1942.
+
+Day 11: March 10, 2021.
+Balanced bot logic and removed the defenders logic. The fighting is more tense and fun now, it's better without defenders.
+Minor bugs only. Bypassed the undefined when spawning bot error, added spawn-failed and returned if true.
+Also made bots go to other flags other than the closest capturable flag. Makes bots split up and populate the map
+leading to more chaotic gunfights.
+We made a good flag allow spawn system, now flags that are owned by team1 and team2 troops are in it capturing or just contesting,
+the flag disallows spawn for both player and bots. But if it's the last flag of the team, then they can spawn to prevent easy victory.
+
+Day 12: March 17, 2021.
+Worked on Rooftops 2 for a while. Took a break from working on conquest.
+Now that I resumed, i organized the mod files and mod assets mainly to have a stable menu without unused stuff.
+Menu is now functional but we need to find a way to allow players to set their match options.
+Speaking of match options, the match settings can now be set from map's code before initialization.
+User can set his own match settings before initialization but be ware of the functions and variables/objects that are used
+that need initialization. This will be worked later if we manage to make PLAYERS select settings from inside the menu.
+Other than that, worked on making the points easier to select. Added Letter Icons on each one but cod4 has up until E letter.
+Users of the open source can add their compass icons later to increase the number. The function is easily editable.
+
+Day 13: March 18, 2021.
+Updated menu files and worked on the levels menu.
+Levels menu now has match options that player can set. No profile needed, the dvars are defined once menu opens.
+They also dont need to be saved so they are zeroed each time game menu opens or match starts.
+The menu visuals are also improved, and player stats are now visible on pause and tab menu.
+Added minimap and sorted the hud elements so that the tab map wont go under them.
+Removed stock compass since we added minimap.
+Also sorted the minimap flag icons so npcs and player are under them so the flag letters and colors are more visible.
+Worked on making the Mimimap not overlap with the left team points bar.
+on 4:3 resolutions it did, the solution to this was to write down all resolutions where this overlap occures
+and in minimap.inc we created two minimaps one is positioned on the top right corner and shows only
+on resolutions that it doesnt overlaps with the right points bar, and the other positioning is right under
+the right team points bar and shows on any other resolution appart from the ones where it overlaps.
+Revised the spawn delay of bots. Now it feels more balanced. When 1 flag remains for a team, bots spawn slower
+on purpose to give a chance to players to win the game by conquering all flags. Also increased the reduce amount thershold of 
+the team points bar when all team flags conquered in the ending functions so if its over 1k it reduces faster.
+Finally, we fixed the flag map icon blink system into a much better system. Also moved it in the flags category.
+Much easier to read and edit now. Overall very productive session and day.
+
+Day 14: March 19, 2021.
+Found a compromising solution for the menu problem. The match settings now are above the minimap preview of the map,
+but their position vary between resolutions.. however it's not overlaping too much with the left menu items.
+It's a good enough solution for now. Later, I decided that instead of levelshot we will have minimap preview 
+showing all positions of the  flags and stuff, png and psd files will be provided with the open source
+so players can place their own flags in thir own maps. It will be tricky to add the maps in their menu files
+as there you must know what you're doing.
+Also improved and balanced the point reduce system to a more balanced reduce time. It can be improved however with some time calculation.
+Made the team point top bar to turn invisible when 0 and team points if under 0 dont show minus number, turn to 0 instead.
+Revised the bot_behaviour. Now the bots go to flag system is slightly better, they still go through poles, but they fix it right after.
+Overall their attacker logic is quite better. Considered returning the defender system but it wasn't really worth the try. Maybe an other time.
+Besides attackers only is way more chaotic and versitile.
+Added music and sounds for all beginning and victory cases, captured flag lost flag, time and other.
+Added end time music and time tick thingy when low time. Also music works in a way that it can't overlap.
+At this point, we are ready for a playable version. Alpha testing will start soon.

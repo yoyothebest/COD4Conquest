@@ -1,0 +1,298 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 456 408 264 ) ( 256 408 264 ) ( 256 256 264 ) caulk_shadow 64 64 -384 -320 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 256 256 272 ) ( 256 408 272 ) ( 456 408 272 ) ch_roof_tiles_1 128 128 -384 -320 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 256 256 272 ) ( 456 256 272 ) ( 456 256 136 ) caulk_shadow 64 64 -384 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 456 256 272 ) ( 456 408 272 ) ( 456 408 136 ) caulk_shadow 64 64 320 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 488 712 272 ) ( 288 712 272 ) ( 288 712 136 ) caulk_shadow 64 64 -384 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 256 408 272 ) ( 256 256 272 ) ( 256 256 136 ) caulk_shadow 64 64 320 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0.0 264.0 0.0"
+"angles" "0 2.50448e-006 0"
+"model" "sp_conquest/outskirts/door2.map"
+"classname" "misc_prefab"
+}
+// entity 2
+{
+"origin" "456.0 968.0 0.0"
+"angles" "0 270 0"
+"model" "sp_conquest/outskirts/door3.map"
+"classname" "misc_prefab"
+}
+// entity 3
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( 608 512 136 ) ( 608 120 136 ) ( 328 120 136 ) caulk_shadow 64 64 -312 256 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 8 40 ) ( 8 8 136 ) ( 0 0 136 ) caulk_shadow 64 -64 -312 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 472 0 8 ) ( 752 0 8 ) ( 752 0 0 ) ch_concretewall05 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 8 144 ) ( 704 8 0 ) ( 712 0 0 ) caulk_shadow 64 -64 -256 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 8 136 ) ( 64 8 40 ) ( 560 8 40 ) caulk_shadow 64 -64 -312 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 200 -8 40 ) ( 184 -8 40 ) ( 200 -40 40 ) caulk 64 64 -312 256 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 312 120 0 ) ( 592 120 0 ) ( 592 512 0 ) caulk_shadow 64 64 -312 256 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 8 0 ) ( 8 8 40 ) ( 0 0 40 ) caulk_shadow 64 -64 -312 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 472 0 8 ) ( 752 0 8 ) ( 752 0 0 ) ch_stonewall_02 128 -128 -309 141 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 8 144 ) ( 704 8 0 ) ( 712 0 0 ) caulk_shadow 64 -64 -256 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 8 40 ) ( 64 8 0 ) ( 560 8 0 ) caulk_shadow 64 -64 -312 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 -8 40 ) ( 200 -8 40 ) ( 200 -40 40 ) caulk 64 64 -312 256 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 4
+{
+"origin" "584.0 968.0 48.0"
+"angles" "0 270 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}
+// entity 5
+{
+"origin" "296.0 968.0 48.0"
+"angles" "0 270 0"
+"model" "sp_conquest/outskirts/window1.map"
+"classname" "misc_prefab"
+}
+// entity 6
+{
+"origin" "0.0 392.0 48.0"
+"angles" "0 2.50448e-006 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}
+// entity 7
+{
+"origin" "0.0 104.0 48.0"
+"angles" "0 2.50448e-006 0"
+"model" "sp_conquest/outskirts/window1.map"
+"classname" "misc_prefab"
+}
+// entity 8
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( 512 104 136 ) ( 120 104 136 ) ( 120 384 136 ) caulk_shadow 64 64 400 256 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 952 40 ) ( 16 952 136 ) ( 8 960 136 ) caulk_shadow 64 64 400 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 240 8 ) ( 0 -40 8 ) ( 0 -40 0 ) ch_concretewall05 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 8 144 ) ( 8 8 0 ) ( 0 0 0 ) caulk_shadow 64 -64 -256 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 648 136 ) ( 8 648 40 ) ( 8 152 40 ) caulk_shadow 64 64 400 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 512 40 ) ( -8 528 40 ) ( -40 512 40 ) caulk 64 64 400 256 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 120 400 0 ) ( 120 120 0 ) ( 512 120 0 ) caulk_shadow 64 64 400 256 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 952 0 ) ( 16 952 40 ) ( 8 960 40 ) caulk_shadow 64 64 400 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 240 8 ) ( 0 -40 8 ) ( 0 -40 0 ) ch_stonewall_02 128 128 403 -141 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 8 144 ) ( 8 8 0 ) ( 0 0 0 ) caulk_shadow 64 -64 -256 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 648 40 ) ( 8 648 0 ) ( 8 152 0 ) caulk_shadow 64 64 400 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 528 40 ) ( -8 512 40 ) ( -40 512 40 ) caulk 64 64 400 256 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 9
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( 104 456 136 ) ( 104 848 136 ) ( 384 848 136 ) caulk_shadow 64 64 400 -712 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 960 40 ) ( 704 960 136 ) ( 712 968 136 ) caulk_shadow 64 64 656 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 240 968 8 ) ( -40 968 8 ) ( -40 968 0 ) ch_concretewall05 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 960 144 ) ( 8 960 0 ) ( 0 968 0 ) caulk_shadow 64 64 712 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 960 136 ) ( 648 960 40 ) ( 152 960 40 ) caulk_shadow 64 64 400 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 512 976 40 ) ( 528 976 40 ) ( 512 1008 40 ) caulk 64 64 400 -712 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 400 848 0 ) ( 120 848 0 ) ( 120 456 0 ) caulk_shadow 64 64 400 -712 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 960 0 ) ( 704 960 40 ) ( 712 968 40 ) caulk_shadow 64 64 656 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 240 968 8 ) ( -40 968 8 ) ( -40 968 0 ) ch_stonewall_02 128 128 403 -141 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 960 144 ) ( 8 960 0 ) ( 0 968 0 ) caulk_shadow 64 64 712 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 960 40 ) ( 648 960 0 ) ( 152 960 0 ) caulk_shadow 64 64 400 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 528 976 40 ) ( 512 976 40 ) ( 512 1008 40 ) caulk 64 64 400 -712 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 10
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( 200 864 136 ) ( 592 864 136 ) ( 592 584 136 ) caulk_shadow 64 64 -568 -456 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 696 16 40 ) ( 696 16 136 ) ( 704 8 136 ) caulk_shadow 64 -64 -568 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 712 728 8 ) ( 712 1008 8 ) ( 712 1008 0 ) ch_concretewall05 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 960 144 ) ( 704 960 0 ) ( 712 968 0 ) caulk_shadow 64 64 712 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 320 136 ) ( 704 320 40 ) ( 704 816 40 ) caulk_shadow 64 -64 -568 64 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 720 456 40 ) ( 720 440 40 ) ( 752 456 40 ) caulk 64 64 -568 -456 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 592 568 0 ) ( 592 848 0 ) ( 200 848 0 ) caulk_shadow 64 64 -568 -456 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 696 16 0 ) ( 696 16 40 ) ( 704 8 40 ) caulk_shadow 64 -64 -568 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 712 728 8 ) ( 712 1008 8 ) ( 712 1008 0 ) ch_stonewall_02 128 -128 -565 141 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 960 144 ) ( 704 960 0 ) ( 712 968 0 ) caulk_shadow 64 64 712 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 320 40 ) ( 704 320 0 ) ( 704 816 0 ) caulk_shadow 64 -64 -568 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 720 440 40 ) ( 720 456 40 ) ( 752 456 40 ) caulk 64 64 -568 -456 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 11
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( 48 -8 136 ) ( 576 -8 136 ) ( 568 0 136 ) ch_wood01 128 128 312 -256 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -8 144 ) ( 576 -8 144 ) ( 576 -8 136 ) ch_wood01 128 128 312 8 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 312 256 272 ) ( 576 -8 144 ) ( 48 -8 144 ) ch_roof_tiles_1 128 128 -264 -128 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 8 136 ) ( 712 0 136 ) ( 712 0 144 ) caulk 64 -64 -256 16 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 136 ) ( 256 256 264 ) ( 256 256 272 ) caulk 64 -64 -312 16 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 0 136 ) ( 568 0 136 ) ( 312 256 264 ) caulk_shadow 64 64 -256 -312 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 256 256 285.5 ) ( 272 256 285.5 ) ( 256 256 317.5 ) caulk 64 64 312 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 12
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( -8 664 136 ) ( -8 136 136 ) ( 0 144 136 ) ch_wood01 128 128 -400 -256 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 664 144 ) ( -8 136 144 ) ( -8 136 136 ) ch_wood01 128 -128 -400 -8 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 256 400 272 ) ( -8 136 144 ) ( -8 664 144 ) ch_roof_tiles_1 128 128 -976 -128 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 8 136 ) ( 0 0 136 ) ( 0 0 144 ) caulk 64 -64 -256 16 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 976 136 ) ( 248 720 264 ) ( 248 720 272 ) caulk 64 64 400 -16 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 656 136 ) ( 0 144 136 ) ( 256 400 264 ) caulk_shadow 64 64 -256 400 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 256 456 285.5 ) ( 256 440 285.5 ) ( 256 456 317.5 ) caulk 64 -64 -400 0 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 13
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( 664 976 136 ) ( 136 976 136 ) ( 144 968 136 ) ch_wood01 128 128 -400 712 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 664 976 144 ) ( 136 976 144 ) ( 136 976 136 ) ch_wood01 128 -128 -400 -8 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 400 712 272 ) ( 136 976 144 ) ( 664 976 144 ) ch_roof_tiles_1 128 128 -976 840 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 960 136 ) ( 0 968 136 ) ( 0 968 144 ) caulk 64 64 712 -16 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 712 968 136 ) ( 456 712 264 ) ( 456 712 272 ) caulk 64 64 656 -16 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 656 968 136 ) ( 144 968 136 ) ( 400 712 264 ) caulk_shadow 64 64 712 400 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 456 712 285.5 ) ( 440 712 285.5 ) ( 456 712 317.5 ) caulk 64 -64 -400 0 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 14
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( 720 304 136 ) ( 720 832 136 ) ( 712 824 136 ) ch_wood01 128 128 568 456 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 720 304 144 ) ( 720 832 144 ) ( 720 832 136 ) ch_wood01 128 128 568 8 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 456 568 272 ) ( 720 832 144 ) ( 720 304 144 ) ch_roof_tiles_1 128 128 -8 584 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 704 960 136 ) ( 712 968 136 ) ( 712 968 144 ) caulk 64 64 712 -16 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 720 -8 136 ) ( 464 248 264 ) ( 464 248 272 ) caulk 64 -64 -568 16 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 712 312 136 ) ( 712 824 136 ) ( 456 568 264 ) caulk_shadow 64 64 456 -568 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 456 512 285.5 ) ( 456 528 285.5 ) ( 456 512 317.5 ) caulk 64 64 568 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 15
+{
+"origin" "0.0 584.0 48.0"
+"angles" "0 2.50448e-006 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}
+// entity 16
+{
+"origin" "0.0 808.0 48.0"
+"angles" "0 2.50448e-006 0"
+"model" "sp_conquest/outskirts/window1.map"
+"classname" "misc_prefab"
+}
+// entity 17
+{
+"origin" "136.0 968.0 48.0"
+"angles" "0 270 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}
+// entity 18
+{
+"origin" "712.0 704.0 0.0"
+"angles" "0 180 0"
+"model" "sp_conquest/outskirts/door1.map"
+"classname" "misc_prefab"
+}
+// entity 19
+{
+"origin" "256.0 0.0 0.0"
+"angles" "0 90 0"
+"model" "sp_conquest/outskirts/door4.map"
+"classname" "misc_prefab"
+}
+// entity 20
+{
+"origin" "128.0 0.0 48.0"
+"angles" "0 90 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}
+// entity 21
+{
+"origin" "416.0 0.0 48.0"
+"angles" "0 90 0"
+"model" "sp_conquest/outskirts/window1.map"
+"classname" "misc_prefab"
+}
+// entity 22
+{
+"origin" "712.0 576.0 48.0"
+"angles" "0 180 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}
+// entity 23
+{
+"origin" "712.0 864.0 48.0"
+"angles" "0 180 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}
+// entity 24
+{
+"origin" "712.0 384.0 48.0"
+"angles" "0 180 0"
+"model" "sp_conquest/outskirts/window1.map"
+"classname" "misc_prefab"
+}
+// entity 25
+{
+"origin" "712.0 160.0 48.0"
+"angles" "0 180 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}
+// entity 26
+{
+"origin" "576.0 0.0 48.0"
+"angles" "0 90 0"
+"model" "sp_conquest/outskirts/window2.map"
+"classname" "misc_prefab"
+}

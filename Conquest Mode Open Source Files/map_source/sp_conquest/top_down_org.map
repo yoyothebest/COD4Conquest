@@ -1,0 +1,20 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"origin" "0.0 0.0 0.0"
+"angles" "90 0 0"
+"targetname" "top_down_org"
+"classname" "script_origin"
+}
+// entity 2
+{
+"origin" "0.0 0.0 0.0"
+"angles" "0 90 0"
+"classname" "info_player_start"
+}

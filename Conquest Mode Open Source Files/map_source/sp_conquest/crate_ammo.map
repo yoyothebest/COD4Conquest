@@ -1,0 +1,426 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 24 46 0 ) ( -72 46 0 ) ( -72 -18 0 ) clip_nosight 64 64 -24 -14 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -72 -18 24 ) ( -72 46 24 ) ( 24 46 24 ) clip_nosight 64 64 -24 -14 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -72 -16 48 ) ( 24 -16 48 ) ( 24 -16 0 ) clip_nosight 64 64 -24 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 24 -18 48 ) ( 24 46 48 ) ( 24 46 0 ) clip_nosight 64 64 14 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 16 48 ) ( -24 16 48 ) ( -24 16 0 ) clip_nosight 64 64 -24 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -24 16 48 ) ( -24 -48 48 ) ( -24 -48 0 ) clip_nosight 64 64 14 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+ {
+  mesh
+  {
+  contents weaponClip;
+   com_blue_tarp
+   lightmap_gray
+   smoothing smoothing_hard
+   5 8 0 8
+   (
+	v -26 -18 11 t 0 -0 0 -0 f 1
+	v -26 -16 11 t 0 -16 0 -0.0625 f 1
+	v -26 -15 11 t 0 -24 0 -0.09375 f 1
+	v -26 -14 11 t 0 -32 0 -0.125
+	v -26 14 11 t 0 -256 0 -1
+	v -26 15 11 t 0 -264 0 -1.03125
+	v -26 16 11 t 0 -275.31372 0 -1.0661886
+	v -26 18 11 t 0 -293.20227 0 -1.1306121
+   )
+   (
+	v -24 -18 11 t 16 -0 0.0625 -0 f 1
+	v -24 -16 24 t 16 -16 0.0625 -0.0625 f 1
+	v -24 -15 24 t 16 -24 0.0625 -0.09375
+	v -24 -14 24 t 16 -32 0.0625 -0.125
+	v -24 14 24 t 16 -256 0.0625 -1
+	v -24 15 24 t 16 -264 0.0625 -1.03125
+	v -24 16 24 t 16 -275.31372 0.0625 -1.0661886
+	v -24 18 11 t 16 -293.20227 0.0625 -1.1306121
+   )
+   (
+	v -23 -18 11 t 24 -0 0.09375 -0 f 1
+	v -23 -16 24 t 24 -16 0.09375 -0.0625
+	v -23 -15 25 t 24 -24 0.09375 -0.09375
+	v -23 -14 25 t 24 -32 0.09375 -0.125
+	v -23 14 25 t 24 -256 0.09375 -1
+	v -23 15 25 t 24 -264 0.09375 -1.03125
+	v -23 16 24 t 24 -275.31372 0.09375 -1.0661886
+	v -23 18 11 t 24 -293.20227 0.09375 -1.1306121
+   )
+   (
+	v -22 -18 11 t 32 -0 0.125 -0
+	v -22 -16 24 t 32 -16 0.125 -0.0625
+	v -22 -15 25 t 32 -24 0.125 -0.09375
+	v -22 -14 24 t 32 -32 0.125 -0.125
+	v -22 14 24 t 32 -256 0.125 -1
+	v -22 15 25 t 32 -264 0.125 -1.03125
+	v -22 16 24 t 32 -275.31372 0.125 -1.0661886
+	v -22 18 11 t 32 -293.20227 0.125 -1.1306121
+   )
+   (
+	v 2 -18 11 t 224 -0 0.9375 -0
+	v 2 -16 24 t 224 -16 0.9375 -0.0625
+	v 2 -15 25 t 224 -24 0.9375 -0.09375
+	v 2 -14 24 t 224 -32 0.9375 -0.125
+	v 2 14 24 t 224 -256 0.9375 -1
+	v 2 15 25 t 224 -264 0.9375 -1.03125
+	v 2 16 24 t 224 -275.31372 0.9375 -1.0661886
+	v 2 18 11 t 224 -293.20227 0.9375 -1.1306121
+   )
+  }
+ }
+// brush 2
+ {
+  mesh
+  {
+  contents weaponClip;
+   com_blue_tarp
+   lightmap_gray
+   smoothing smoothing_hard
+   5 8 0 8
+   (
+	v -26 18 11 t 0 -0 0 -0
+	v -26 16 11 t 0 -17.888544 0 -0.064423524
+	v -26 15 11 t 0 -29.202251 0 -0.09936209
+	v -26 14 11 t 0 -37.202251 0 -0.13061209
+	v -26 -14 11 t 0 -261.20224 0 -1.0056121 f 1
+	v -26 -15 11 t 0 -269.20224 0 -1.0368621 f 1
+	v -26 -16 11 t 0 -277.20224 0 -1.0681121 f 1
+	v -26 -18 11 t 0 -293.20224 0 -1.1306121 f 1
+   )
+   (
+	v -24 18 11 t 16 -0 0.0625 -0
+	v -24 16 24 t 16 -17.888544 0.0625 -0.064423524 f 1
+	v -24 15 24 t 16 -29.202251 0.0625 -0.09936209
+	v -24 14 24 t 16 -37.202251 0.0625 -0.13061209
+	v -24 -14 24 t 16 -261.20224 0.0625 -1.0056121
+	v -24 -15 24 t 16 -269.20224 0.0625 -1.0368621
+	v -24 -16 24 t 16 -277.20224 0.0625 -1.0681121 f 1
+	v -24 -18 11 t 16 -293.20224 0.0625 -1.1306121 f 1
+   )
+   (
+	v -23 18 11 t 24 -0 0.09375 -0
+	v -23 16 24 t 24 -17.888544 0.09375 -0.064423524
+	v -23 15 25 t 24 -29.202251 0.09375 -0.09936209
+	v -23 14 25 t 24 -37.202251 0.09375 -0.13061209
+	v -23 -14 25 t 24 -261.20224 0.09375 -1.0056121
+	v -23 -15 25 t 24 -269.20224 0.09375 -1.0368621
+	v -23 -16 24 t 24 -277.20224 0.09375 -1.0681121 f 1
+	v -23 -18 11 t 24 -293.20224 0.09375 -1.1306121 f 1
+   )
+   (
+	v -22 18 11 t 32 -0 0.125 -0
+	v -22 16 24 t 32 -17.888544 0.125 -0.064423524
+	v -22 15 25 t 32 -29.202251 0.125 -0.09936209
+	v -22 14 24 t 32 -37.202251 0.125 -0.13061209
+	v -22 -14 24 t 32 -261.20224 0.125 -1.0056121
+	v -22 -15 25 t 32 -269.20224 0.125 -1.0368621
+	v -22 -16 24 t 32 -277.20224 0.125 -1.0681121
+	v -22 -18 11 t 32 -293.20224 0.125 -1.1306121
+   )
+   (
+	v 2 18 11 t 224 -0 0.9375 -0
+	v 2 16 24 t 224 -17.888544 0.9375 -0.064423524
+	v 2 15 25 t 224 -29.202251 0.9375 -0.09936209
+	v 2 14 24 t 224 -37.202251 0.9375 -0.13061209
+	v 2 -14 24 t 224 -261.20224 0.9375 -1.0056121
+	v 2 -15 25 t 224 -269.20224 0.9375 -1.0368621
+	v 2 -16 24 t 224 -277.20224 0.9375 -1.0681121
+	v 2 -18 11 t 224 -293.20224 0.9375 -1.1306121
+   )
+  }
+ }
+// brush 3
+{
+  contents weaponClip;
+ ( -24 -76 0 ) ( 72 -76 0 ) ( 72 -12 0 ) ch_wood01 128 128 24 -16 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 -12 24 ) ( 72 -76 24 ) ( -24 -76 24 ) ch_wood01 128 128 24 -16 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -20 -14 48 ) ( -20 -14 0 ) ( 68 -14 0 ) ch_wood01 128 128 24 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -20 -12 0 ) ( -20 -12 48 ) ( -24 -16 48 ) ch_wood01 128 128 16 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -68 -16 16 ) ( 28 -16 16 ) ( 28 -16 0 ) ch_wood01 128 128 24 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 -12 48 ) ( 20 -12 0 ) ( 24 -16 0 ) ch_wood01 128 128 16 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+  contents weaponClip;
+ ( -84 32 0 ) ( -84 -64 0 ) ( -20 -64 0 ) ch_wood01 128 128 16 -8 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -20 -64 24 ) ( -84 -64 24 ) ( -84 32 24 ) ch_wood01 128 128 16 -8 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -22 12 48 ) ( -22 12 0 ) ( -22 -76 0 ) ch_wood01 128 -128 16 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -20 12 0 ) ( -20 12 48 ) ( -24 16 48 ) ch_wood01 128 -128 0 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -24 76 16 ) ( -24 -20 16 ) ( -24 -20 0 ) ch_wood01 128 -128 16 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -20 -12 48 ) ( -20 -12 0 ) ( -24 -16 0 ) ch_wood01 128 128 16 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+  contents weaponClip;
+ ( 84 -32 0 ) ( 84 64 0 ) ( 20 64 0 ) ch_wood01 128 128 16 -8 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 64 24 ) ( 84 64 24 ) ( 84 -32 24 ) ch_wood01 128 128 16 -8 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 22 -12 48 ) ( 22 -12 0 ) ( 22 76 0 ) ch_wood01 128 128 16 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 -12 0 ) ( 20 -12 48 ) ( 24 -16 48 ) ch_wood01 128 128 0 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 24 -76 16 ) ( 24 20 16 ) ( 24 20 0 ) ch_wood01 128 128 16 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 12 48 ) ( 20 12 0 ) ( 24 16 0 ) ch_wood01 128 -128 16 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+  contents weaponClip;
+ ( 24 76 0 ) ( -72 76 0 ) ( -72 12 0 ) ch_wood01 128 128 24 -16 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -72 12 24 ) ( -72 76 24 ) ( 24 76 24 ) ch_wood01 128 128 24 -16 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 14 48 ) ( 20 14 0 ) ( -68 14 0 ) ch_wood01 128 -128 24 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 12 0 ) ( 20 12 48 ) ( 24 16 48 ) ch_wood01 128 -128 16 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 68 16 16 ) ( -28 16 16 ) ( -28 16 0 ) ch_wood01 128 -128 24 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -20 12 48 ) ( -20 12 0 ) ( -24 16 0 ) ch_wood01 128 -128 16 64 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 7
+{
+  contents weaponClip;
+ ( 30 42 0 ) ( -66 42 0 ) ( -66 -22 0 ) ch_ceiling02 128 128 -22 -14 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -22 16 ) ( -64 42 16 ) ( 32 42 16 ) ch_ceiling02 128 128 -22 -22 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -74 -14 16 ) ( 22 -14 16 ) ( 22 -14 0 ) ch_ceiling02 128 128 -22 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 22 -14 16 ) ( 22 50 16 ) ( 22 50 0 ) ch_ceiling02 128 128 14 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 74 14 16 ) ( -22 14 16 ) ( -22 14 0 ) ch_ceiling02 128 128 -22 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -22 12 16 ) ( -22 -52 16 ) ( -22 -52 0 ) ch_ceiling02 128 128 14 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"targetname" "ammo_crate_trigger"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( -40 0 0 ) ( 8 0 0 ) ( 8 32 0 ) trigger 64 64 -128 -48 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -40 32 40 ) ( 8 32 40 ) ( 8 0 40 ) trigger 64 64 -128 -48 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -32 16 ) ( -8 -32 32 ) ( 40 -32 32 ) trigger 64 64 -128 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 40 0 16 ) ( 40 -32 16 ) ( 40 -32 32 ) trigger 64 64 48 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 32 16 ) ( 8 32 32 ) ( -40 32 32 ) trigger 64 64 -128 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -40 32 32 ) ( -40 0 32 ) ( -40 0 16 ) trigger 64 64 48 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 2
+{
+"origin" "17.0 11.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 3
+{
+"origin" "17.0 9.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 4
+{
+"origin" "17.0 7.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 5
+{
+"origin" "17.0 5.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 6
+{
+"origin" "17.0 3.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 7
+{
+"origin" "17.0 1.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 8
+{
+"origin" "17.0 -1.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 9
+{
+"origin" "17.0 -3.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 10
+{
+"origin" "17.0 -5.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 11
+{
+"origin" "17.0 -7.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 12
+{
+"origin" "17.0 -9.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 13
+{
+"origin" "17.0 -11.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 14
+{
+"origin" "17.0 -13.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 15
+{
+"origin" "17.0 13.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 16
+{
+"origin" "8.0 11.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 17
+{
+"origin" "8.0 9.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 18
+{
+"origin" "8.0 7.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 19
+{
+"origin" "8.0 5.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 20
+{
+"origin" "8.0 3.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 21
+{
+"origin" "8.0 1.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 22
+{
+"origin" "8.0 -1.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 23
+{
+"origin" "8.0 -3.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 24
+{
+"origin" "8.0 -5.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 25
+{
+"origin" "8.0 -7.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 26
+{
+"origin" "8.0 -9.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 27
+{
+"origin" "8.0 -11.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 28
+{
+"origin" "8.0 -13.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}
+// entity 29
+{
+"origin" "8.0 13.0 17.0"
+"modelscale" "5"
+"angles" "0 90 0"
+"classname" "misc_model"
+"model" "weapon_bullet_01"
+}

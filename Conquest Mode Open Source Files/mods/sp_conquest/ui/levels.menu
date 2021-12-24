@@ -1,0 +1,152 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_X_START			0
+#define CHOICE_Y_START			34
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#undef CHOICE_SIZE_X
+#undef CHOICE_SIZE_Y
+#define CHOICE_SIZE_X			258
+#define CHOICE_SIZE_Y			22
+
+#define GAMEINFO_WIDTH			250
+#define GAMEINFO_WIDTH2			340
+#define GAMEINFO_HEIGHT			285
+#define GAMEINFO_HEIGHT2		50
+#define GAMEINFO_HEIGHT3		GAMEINFO_HEIGHT+GAMEINFO_HEIGHT2+8
+#define GAMEINFO_HEIGHT4		444
+
+#define GAMEINFO_ORIGIN2		-30 -237 // this is to define the origin of the generic gray background
+#define GAMEINFO_ORIGIN			-30 -135 // This is for the higher match settings to fit the description below. default is -30 -115 
+
+#define PC_OFFSET_Y				40
+
+// ===== MAP STUFF ================================================================================
+
+
+#define LOCAL_MAP_SHOW( p_mapname ) \
+	hide "start_group"; \
+	hide "map_image_group"; \
+	hide "map_name_group"; \
+	hide "map_desc_group"; \
+	show "image_"p_mapname; \
+	show "name_"p_mapname; \
+	show "desc_"p_mapname; 
+
+#define LOCAL_MAP_ACTION( p_mapname, p_mapname_text ) \
+	setdvar ui_load_level p_mapname; open popmenu_difficulty;
+
+#define LOCAL_MAP_SELECTION( itemNum, p_mapname_text, p_mapname )\
+	CHOICE_BUTTON_FOCUS_VIS( itemNum, p_mapname_text, LOCAL_MAP_ACTION( p_mapname, p_mapname_text ), LOCAL_MAP_SHOW( p_mapname ), ;, when(1); ) \
+	PREPROC_SHADER_DRAW_ALIGNED( GAMEINFO_ORIGIN GAMEINFO_WIDTH2 (GAMEINFO_WIDTH2-8) HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 5, "map_preview_"p_mapname, 1 1 1 1, 0, 0, 0 0 0 0 name "image_"p_mapname group "map_image_group" ) \
+
+{
+	menuDef
+	{
+		name			levels
+		fullscreen		1
+		rect			0 0 640 480
+		focuscolor		COLOR_FOCUSED
+		style			WINDOW_STYLE_FILLED
+		border			0
+		soundloop 		"cq_theme"
+		onOpen
+		{
+			hide map_name_group
+			hide map_image_group
+			hide map_desc_group
+			exec "exec conquest_match_settings.cfg";
+		}
+		onEsc			{	close levels;	}
+		onClose			{}
+		
+		#include "ui/blurredbg.inc"
+		#include "ui_mp/navcontrols.inc"
+		
+		CHOICE_MENU_TITLE( "@CONQUEST_MAPS_CAP" )	
+	
+		// ===== MAPS ================================================================================
+
+		// Parameters:	   ( item_index, text_mapname, map_filename )
+		LOCAL_MAP_SELECTION( 1, "@CONQUEST_BASIC", "cq_basic" )
+		LOCAL_MAP_SELECTION( 2, "@CONQUEST_WELLTOWN", "cq_welltown" )
+		LOCAL_MAP_SELECTION( 3, "@CONQUEST_OUTSKIRTS", "cq_outskirts" )
+
+		// ===== MATCH OPTIONS ================================================================================
+
+
+
+		#undef CHOICE_SIZE_X
+		#undef CHOICE_SIZE_Y
+		#define CHOICE_SIZE_X			120 // defines the match settings button width
+		#define CHOICE_SIZE_Y			22 // (def:22) defines the match settings button height (dont touch that its default and its fine.)
+		
+		#undef CHOICE_X_START
+		#define CHOICE_X_START			0 // is added to choice_x_spacing to move the element towards the right
+		
+		#undef CHOICE_Y_START			// default: 82
+		#define CHOICE_Y_START			10 // determines the height start position of the match elements.
+		
+		#undef CHOICE_X_SPACING
+		#define CHOICE_X_SPACING		380 // Determines how far right the match settings stuff will be aligned from the levels.
+
+
+		
+		//To work on player given match settings:
+		CHOICE_SECTION_TITLE( 21, "@CONQUEST_MATCH_SETTINGS" )
+		CHOICE_DVARFLOATLIST(22,"@CONQUEST_MATCH_TIME",cq_time,
+		{ 
+		"@CONQUEST_UNLIMITED" -2	
+		"@CONQUEST_M5" 300 	
+		"@CONQUEST_M10" 600 
+		"@CONQUEST_M15" 900 
+		"@CONQUEST_M20" 1200 
+		"@CONQUEST_M25" 1500
+		"@CONQUEST_M30" 1800 
+		},;)
+		CHOICE_DVARFLOATLIST(23,"@CONQUEST_TEAM_POINTS",cq_teampoints,
+		{ 
+		"@CONQUEST_N100" 100 
+		"@CONQUEST_N200" 200 
+		"@CONQUEST_N300" 300 
+		"@CONQUEST_N400" 400 
+		"@CONQUEST_N500" 500 
+		"@CONQUEST_N600" 600
+		"@CONQUEST_N700" 700 
+		"@CONQUEST_N800" 800 
+		"@CONQUEST_N900" 900 
+		"@CONQUEST_N1000" 1000
+		},;)
+		CHOICE_DVARFLOATLIST(24,"@CONQUEST_MAX_BOTS_PER_TEAM",cq_maxteambots,
+		{ 
+		"@CONQUEST_N1" 1 
+		"@CONQUEST_N2" 2 
+		"@CONQUEST_N3" 3 
+		"@CONQUEST_N4" 4 
+		"@CONQUEST_N5" 5 
+		"@CONQUEST_N6" 6 
+		"@CONQUEST_N7" 7 
+		"@CONQUEST_N8" 8 
+		"@CONQUEST_N9" 9 
+		"@CONQUEST_N10" 10 
+		"@CONQUEST_N11" 11 
+		"@CONQUEST_N12" 12 
+		"@CONQUEST_N13" 13 
+		"@CONQUEST_N14" 14 
+		"@CONQUEST_N15" 15 
+		},;)
+	}
+}
+
+
+
+
+
+
+
+
+
+
