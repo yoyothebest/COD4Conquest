@@ -1,0 +1,294 @@
+VERSION             "1"
+CONFIG              "F:\projects\mk\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           NULL
+LANG_ENGLISH        ""
+
+
+REFERENCE           MAPS
+LANG_ENGLISH        "Conquest Maps"
+
+REFERENCE           MAPS_CAP
+LANG_ENGLISH        "CONQUEST MAPS"
+
+REFERENCE           OUTSKIRTS
+LANG_ENGLISH        "Outskirts"
+
+REFERENCE           WELLTOWN
+LANG_ENGLISH        "Welltown"
+
+REFERENCE           BASIC
+LANG_ENGLISH        "Basic"
+
+REFERENCE           WELLTOWN_DESC
+LANG_ENGLISH        "An example map for every gamemode. Although Conquest Mode works better on larger maps, Welltown can play pretty good on it."
+
+
+REFERENCE           PLAY_MAP
+LANG_ENGLISH        "Play Map?"
+
+REFERENCE           FSCREEN
+LANG_ENGLISH        "Fullscreen"
+
+REFERENCE           FOV
+LANG_ENGLISH        "Field Of View"
+
+REFERENCE           HITMARKER
+LANG_ENGLISH        "Hitmarker"
+
+
+
+
+
+REFERENCE           MATCH_SETTINGS
+LANG_ENGLISH        "Match Settings: "
+
+REFERENCE           MATCH_TIME
+LANG_ENGLISH        "Match Time: "
+
+REFERENCE           TEAM_POINTS
+LANG_ENGLISH        "Team Points: "
+
+REFERENCE           MAX_BOTS_PER_TEAM
+LANG_ENGLISH        "Max Team Bots: "
+
+REFERENCE           TIMELOW
+LANG_ENGLISH        "Time Is Running Out!"
+
+
+REFERENCE           UNLIMITED
+LANG_ENGLISH        "Unlimited"
+REFERENCE           M5
+LANG_ENGLISH        "5 Minutes"
+REFERENCE           M10
+LANG_ENGLISH        "10 Minutes"
+REFERENCE           M15
+LANG_ENGLISH        "15 Minutes"
+REFERENCE           M20
+LANG_ENGLISH        "20 Minutes"
+REFERENCE           M25
+LANG_ENGLISH        "25 Minutes"
+REFERENCE           M30
+LANG_ENGLISH        "30 Minutes"
+
+REFERENCE           N1
+LANG_ENGLISH        "1"
+REFERENCE           N2
+LANG_ENGLISH        "2"
+REFERENCE           N3
+LANG_ENGLISH        "3"
+REFERENCE           N4
+LANG_ENGLISH        "4"
+REFERENCE           N5
+LANG_ENGLISH        "5"
+REFERENCE           N6
+LANG_ENGLISH        "6"
+REFERENCE           N7
+LANG_ENGLISH        "7"
+REFERENCE           N8
+LANG_ENGLISH        "8"
+REFERENCE           N9
+LANG_ENGLISH        "9"
+REFERENCE           N10
+LANG_ENGLISH        "10"
+REFERENCE           N11
+LANG_ENGLISH        "11"
+REFERENCE           N12
+LANG_ENGLISH        "12"
+REFERENCE           N13
+LANG_ENGLISH        "13"
+REFERENCE           N14
+LANG_ENGLISH        "14"
+REFERENCE           N15
+LANG_ENGLISH        "15"
+REFERENCE           N100
+LANG_ENGLISH        "100"
+REFERENCE           N200
+LANG_ENGLISH        "200"
+REFERENCE           N300
+LANG_ENGLISH        "300"
+REFERENCE           N400
+LANG_ENGLISH        "400"
+REFERENCE           N500
+LANG_ENGLISH        "500"
+REFERENCE           N600
+LANG_ENGLISH        "600"
+REFERENCE           N700
+LANG_ENGLISH        "700"
+REFERENCE           N800
+LANG_ENGLISH        "800"
+REFERENCE           N900
+LANG_ENGLISH        "900"
+REFERENCE           N1000
+LANG_ENGLISH        "1000"
+REFERENCE           N1500
+LANG_ENGLISH        "1500"
+REFERENCE           N2000
+LANG_ENGLISH        "2000"
+REFERENCE           N2500
+LANG_ENGLISH        "2500"
+REFERENCE           N3000
+LANG_ENGLISH        "3000"
+
+
+REFERENCE           STATS
+LANG_ENGLISH        "Stats: "
+REFERENCE           KILLS
+LANG_ENGLISH        "Kills: "
+REFERENCE           DEATHS
+LANG_ENGLISH        "Deaths: "
+REFERENCE           CAPTURES
+LANG_ENGLISH        "Captures: "
+
+
+REFERENCE           ZEROTIME
+LANG_ENGLISH        "--:--"
+
+REFERENCE           FLAG_TITLE
+LANG_ENGLISH        "CONTROL POINT"
+
+REFERENCE           FLAG_CAP
+LANG_ENGLISH        "Capturing..."
+
+REFERENCE           FLAG_CAP_GREEN
+LANG_ENGLISH        "^2Capturing..."
+
+REFERENCE           FLAG_CAP_RED
+LANG_ENGLISH        "^1Capturing..."
+
+REFERENCE           FLAG_CAPD
+LANG_ENGLISH        "Captured."
+
+REFERENCE           FLAG_NEU
+LANG_ENGLISH        "Neutralizing..."
+
+REFERENCE           FLAG_CON
+LANG_ENGLISH        "^1CONTESTED!"
+
+
+
+
+
+REFERENCE           ALLIES
+LANG_ENGLISH        "ALLIES"
+
+REFERENCE           AXIS
+LANG_ENGLISH        "AXIS"
+
+REFERENCE           MATCH_ALLIES_WIN
+LANG_ENGLISH        "ALLIES Win"
+
+REFERENCE           MATCH_AXIS_WIN
+LANG_ENGLISH        "AXIS Win"
+
+
+REFERENCE           MATCH_VICTORY
+LANG_ENGLISH        "^2VICTORY!"
+
+REFERENCE           MATCH_DEFEAT
+LANG_ENGLISH        "^1DEFEAT!"
+
+REFERENCE           MATCH_TIE
+LANG_ENGLISH        "TIE"
+REFERENCE           MATCH_TIE_REASON
+LANG_ENGLISH        "Both Teams Have The Same Remaining Points."
+
+
+REFERENCE           RESTART
+LANG_ENGLISH        "Restart"
+REFERENCE           EXIT
+LANG_ENGLISH        "Exit"
+
+
+REFERENCE           MATCH_POINTS_WIN
+LANG_ENGLISH        "Enemy Team Points Are Depleted."
+REFERENCE           MATCH_POINTS_DEF
+LANG_ENGLISH        "Your Team Points Are Depleted."
+
+REFERENCE           MATCH_FLAGS_VIC
+LANG_ENGLISH        "Your Team Has Conquered The Map."
+REFERENCE           MATCH_FLAGS_DEF
+LANG_ENGLISH        "Enemy Team Has Conquered The Map."
+
+
+REFERENCE           MATCH_TIME_UP
+LANG_ENGLISH        "Time Up."
+REFERENCE           MATCH_TIME_WIN
+LANG_ENGLISH        "Your Team Has More Remaining Points."
+REFERENCE           MATCH_TIME_DEF
+LANG_ENGLISH        "Enemy Team Has More Remaining Points."
+
+
+
+
+
+
+
+REFERENCE           SPAWN_SELECT_TIP
+LANG_ENGLISH        "Press ^3W^7 and ^3S^7 to cycle between Spawn Points.\nAnd ^3F^7 to Spawn."
+
+
+REFERENCE           SELECT_TEAM
+LANG_ENGLISH        "Select Team"
+REFERENCE           SAS
+LANG_ENGLISH        "S.A.S."
+REFERENCE           SPET
+LANG_ENGLISH        "Spetsnaz"
+
+REFERENCE           SELECT_CLASS
+LANG_ENGLISH        "Select Weapon Class"
+REFERENCE           ASSAULT
+LANG_ENGLISH        "Assault"
+REFERENCE           SUPPORT
+LANG_ENGLISH        "Support"
+REFERENCE           MEDIC
+LANG_ENGLISH        "Medic"
+REFERENCE           SNIPER
+LANG_ENGLISH        "Sniper"
+REFERENCE           SPECOPS
+LANG_ENGLISH        "Spec-Ops"
+
+REFERENCE           X1
+LANG_ENGLISH        "x1"
+REFERENCE           X2
+LANG_ENGLISH        "x2"
+REFERENCE           X3
+LANG_ENGLISH        "x3"
+REFERENCE           X4
+LANG_ENGLISH        "x4"
+
+
+REFERENCE           SELECT_SPAWN
+LANG_ENGLISH        "Select Spawn Point"
+
+REFERENCE           SPAWN1
+LANG_ENGLISH        "Spawn Point A"
+REFERENCE           SPAWN2
+LANG_ENGLISH        "Spawn Point B"
+REFERENCE           SPAWN3
+LANG_ENGLISH        "Spawn Point C"
+REFERENCE           SPAWN4
+LANG_ENGLISH        "Spawn Point D"
+REFERENCE           SPAWN5
+LANG_ENGLISH        "Spawn Point E"
+REFERENCE           SPAWN6
+LANG_ENGLISH        "Spawn Point F"
+REFERENCE           SPAWN7
+LANG_ENGLISH        "Spawn Point G"
+REFERENCE           SPAWN8
+LANG_ENGLISH        "Spawn Point H"
+
+REFERENCE           CONFIRM_SPAWN
+LANG_ENGLISH        "SPAWN"
+
+
+
+
+
+
+
+
+
+
+ENDMARKER

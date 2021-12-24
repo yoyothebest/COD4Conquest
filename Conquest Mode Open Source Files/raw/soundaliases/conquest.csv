@@ -1,0 +1,26 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,conversion
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+cq_theme,,conquest/music/bf1942menu.mp3,0.8,0.9,music,,,,,menu,streamed,,looping,1,all_sp,,,,,,music,,,,!PC,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+conquest_ally_spawn,,conquest/music/sasspawn.mp3,0.8,0.9,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+conquest_ally_victory,,conquest/music/sasvic.mp3,0.8,0.9,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+conquest_ally_defeat,,conquest/music/sasdef.mp3,0.8,0.9,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+conquest_axis_spawn,,conquest/music/ruspawn.mp3,0.8,0.9,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+conquest_axis_victory,,conquest/music/ruvic.mp3,0.74,0.75,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+conquest_axis_defeat,,conquest/music/rudef.mp3,0.8,0.9,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+conquest_tie,,conquest/music/tie.mp3,0.8,0.9,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+conquest_points_low,,music/HGW_maintheme_tension_loop.mp3,0.8,0.9,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+conquest_time_running_out,,conquest/music/timeout.mp3,0.8,0.9,music,,,,,music,streamed,,nonlooping,1,all_sp,,,,,,music,nowetlevel fulldrylevel,,,!PC,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#misc,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+zoom_in,,conquest/misc/zoom_in.wav,1,1,na,,,500000,,local,,,,,all_sp
+zoom_out,,conquest/misc/zoom_out.wav,1,1,na,,,500000,,local,,,,,all_sp
+conquest_point_lost,,misc/stv_flag_stolen.wav,1,1,,1,1,,,auto2d,streamed,,,,all_sp
+conquest_point_captured,,misc/stv_enemy_flag_stolen.wav,1,1,,1,1,,,auto2d,streamed,,,,all_sp
+#time_sec_tick,,misc/bomb_tick_digital1.wav,0.8,0.8,na,,,500000,,local,,,,,all_sp
+time_sec_tick,,conquest/misc/timer_beep.wav,0.8,0.8,na,,,500000,,local,,,,,all_sp
+hitmarker,,conquest/misc/hitmarker.wav,1,1,element,,,360,6000,auto,,,nonlooping,0.5,all_sp,,,,,,,,,,,,,
+#weap_pickup,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#health_pickup_medium,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
