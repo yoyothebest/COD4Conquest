@@ -1,0 +1,110 @@
+#include "ui/scriptmenus/conquest_common.menu"
+
+#define ITEM_X_HALFWAY 320
+#define ITEM_Y_HALFWAY 240
+#define ITEM_SIZE_X 100
+#define ITEM_SIZE_Y 20
+#define ITEM_CENTER_DIST 60
+
+#define CHOICE_LEFT_X (ITEM_X_HALFWAY-ITEM_CENTER_DIST-ITEM_SIZE_X)
+#define CHOICE_RIGHT_X (ITEM_X_HALFWAY+ITEM_CENTER_DIST)
+#define CHOICES_Y 430
+
+#define SELECT_END(end1, text1, x, y, w, h, actionarg ) \ 
+itemDef \
+{ \
+	name		"endtext1" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	exp			text( text1 ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	(h+(h/8)); \
+	Forecolor 	CHOICE_TEXTCOLOR \
+    visible        when( localVarString( spi_button ) != end1 ); \
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	name		"endtext2" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	exp			text( text1 ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	ITEM_TEXTSTYLE_NORMAL \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	(h+(h/8)); \
+	Forecolor 	1 1 1 1 \
+    visible        when( localVarString( spi_button ) == end1 ); \
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	type		ITEM_TYPE_BUTTON \
+	visible		1 \
+	style		WINDOW_STYLE_FILLED \
+	mouseEnter \
+	{ \
+		play "mouse_over"; \
+		setLocalVarString spi_button end1; \
+	} \
+	mouseExit \
+	{ \
+		setLocalVarString spi_button "-1"; \
+	} \
+	action \
+	{ \
+		play "mouse_click"; \
+		actionarg; \
+	} \
+}
+
+/*
+itemDef \
+{ \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.5 \
+    visible        when( localVarString( spi_button ) != end1 ); \
+} \
+itemDef \
+{ \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.75 \
+    visible        when( localVarString( spi_button ) == end1 ); \
+} \
+*/
+
+
+#define RESTART_LVL \
+	play "mouse_click";\
+	scriptMenuResponse "restart_lvl";\
+	close self; \
+	exec "fast_restart";	
+#define QUIT_LVL \
+	play "mouse_click";\
+	scriptMenuResponse "quitlvl";\
+	close self;	
+
+{
+	menuDef
+	{
+		name 		conquest_gameover
+		rect		HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER 10000 10000 0 0
+		onOpen{}
+		onClose{}
+		onEsc{}
+		SELECT_END("1", "@CONQUEST_RESTART", CHOICE_LEFT_X, CHOICES_Y, ITEM_SIZE_X, ITEM_SIZE_Y, RESTART_LVL )
+		SELECT_END("2,", "@CONQUEST_EXIT", CHOICE_RIGHT_X, CHOICES_Y, ITEM_SIZE_X, ITEM_SIZE_Y, QUIT_LVL )
+		
+	}	
+}

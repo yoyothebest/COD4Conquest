@@ -1,0 +1,135 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/popupstyle.inc"
+#include "ui/choices_setup_popmenu.menu"
+
+#define NO_BG_CLOSE	1
+
+#define ITEM_X_HALFWAY 320
+#define ITEM_Y_HALFWAY 240
+#define ITEM_SIZE_X 200
+#define ITEM_SIZE_Y 200
+#define ITEM_CENTER_DIST 40
+
+#define CHOICE_LEFT_X (ITEM_X_HALFWAY-ITEM_CENTER_DIST-ITEM_SIZE_X)
+#define CHOICE_RIGHT_X (ITEM_X_HALFWAY+ITEM_CENTER_DIST)
+#define CHOICES_Y (ITEM_Y_HALFWAY-ITEM_SIZE_Y/2)
+
+#define LOCAL_ACTION(resp) \
+	play "mouse_click";\
+	scriptMenuResponse resp;\
+	close self;		
+
+#define TITLE_SELECT_TEAM(textName) \
+itemDef \
+{ \
+	name		"title_select_team" \
+	rect		(HORIZONTAL_ALIGN_CENTER+ITEM_X_HALFWAY) (VERTICAL_ALIGN_CENTER+75) 1 1 0 0 \
+	exp			text( textName ) \
+	type		ITEM_TYPE_BUTTON \
+	textfont	UI_FONT_NORMAL \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.75 \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+	visible		1 \
+	style		WINDOW_STYLE_FILLED \
+} \
+
+#define SELECT_FACTION(faction, x, y, imageArg, w, h , textName) \ 
+itemDef \
+{ \
+	name			"team_image_full" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material(imageArg) \
+	Forecolor 		1 1 1 1 \
+    visible        when( localVarString( spi_button ) == faction ); \
+} \
+itemDef \
+{ \
+	name			"team_image_fade" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material(imageArg) \
+	Forecolor 		1 1 1 0.75 \
+    visible         when( localVarString( spi_button ) != faction );  \
+} \
+itemDef \
+{ \
+	name			"team_text" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	exp			text( textName ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	(h+(h/8)); \
+	Forecolor 	CHOICE_TEXTCOLOR \
+	style		WINDOW_STYLE_FILLED \
+    visible         when( localVarString( spi_button ) != faction );  \
+} \
+itemDef \
+{ \
+	name			"team_text2" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	exp			text( textName ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	ITEM_TEXTSTYLE_NORMAL \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	(h+(h/8)); \
+	Forecolor 	1 1 1 1 \
+	style		WINDOW_STYLE_FILLED \
+    visible        when( localVarString( spi_button ) == faction ); \
+} \
+itemDef \
+{ \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	type		ITEM_TYPE_BUTTON \
+	visible		1 \
+	style		WINDOW_STYLE_FILLED \
+	mouseEnter \
+	{ \
+		play "mouse_over"; \
+		setLocalVarString spi_button faction; \
+	} \
+	mouseExit \
+	{ \
+		setLocalVarString spi_button "-1"; \
+	} \
+	action \
+	{ \
+		play "mouse_click"; \
+		LOCAL_ACTION(faction); \
+	} \
+}
+
+
+
+
+{
+	menuDef
+	{
+		// This asshole took me 90 minutes to figure out. The only solution was to add more zeroes below
+		// I hate cod4 with all my guts. I hope this game never existed and mw2 had mod tools.
+		name 		conquest_team
+		rect		HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER 10000 10000 0 0
+		onOpen{}
+		onClose{}
+		onEsc{}
+		//when x and y parameters are 0 then the image/icon is on the top left corner, x and y seem to be 640x480 resolution.
+		TITLE_SELECT_TEAM( "@CONQUEST_SELECT_TEAM" )
+		SELECT_FACTION("allies", CHOICE_LEFT_X, CHOICES_Y, "faction_128_sas", ITEM_SIZE_X, ITEM_SIZE_Y, "ALLIES" )
+		SELECT_FACTION("axis", CHOICE_RIGHT_X, CHOICES_Y, "faction_128_ussr", ITEM_SIZE_X, ITEM_SIZE_Y,"AXIS" )
+		
+	}	
+}

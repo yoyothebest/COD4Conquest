@@ -1,0 +1,464 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui_mp/popupstyle.inc"
+#include "ui/choices_setup_popmenu.menu"
+
+#define NO_BG_CLOSE	1
+
+#define CLASS_DIFFERENCE 8
+#define CLASS_WIDTH 240
+#define CLASS_HEIGHT 80
+#define CLASS_X 30
+#define WEAP1_W 100
+#define WEAP1_H 50
+#define WEAP2_SIZE 50
+#define FRAG_SIZE 25
+#define CHAR_WIDTH 200
+#define CHAR_HEIGHT 400
+
+#define SPAWN_DIFFERENCE 8
+#define SPAWN_WIDTH 200
+#define SPAWN_HEIGHT 30
+#define SPAWN_X 25
+
+#define CONFIRM_BUTTON_RECT (HORIZONTAL_ALIGN_CENTER+(SPAWN_X)) (VERTICAL_ALIGN_CENTER+(SPAWN_X+(SPAWN_HEIGHT+SPAWN_DIFFERENCE)*8)) SPAWN_WIDTH 130 0 0
+#define CONFIRM_TEXT_RECT (HORIZONTAL_ALIGN_CENTER+(SPAWN_X)) (VERTICAL_ALIGN_CENTER+(SPAWN_X+(SPAWN_HEIGHT+SPAWN_DIFFERENCE)*8)+(80)) SPAWN_WIDTH 190 0 0
+
+
+#define MAP_WH 390
+#define SPAWN_MAP_RECT (HORIZONTAL_ALIGN_CENTER+SPAWN_WIDTH+SPAWN_X) (VERTICAL_ALIGN_CENTER+(59)) MAP_WH MAP_WH 0 0
+
+#define LOCAL_ACTION(resp) \
+	play "mouse_click";\
+	scriptMenuResponse resp;\
+	close self;		
+
+
+//####################################################
+//######## TITLE ##############################
+//####################################################
+
+#define TITLE_SPAWN_SELECT(textName,x,y,w,h) \
+itemDef \
+{ \
+	name		"title_select_spawn" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(w/2)) (VERTICAL_ALIGN_CENTER+(y)) 1 1 0 0 \
+	exp			text( textName ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_NORMAL \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.5 \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+	visible		1 \
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	name			"spawns_bg" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.5 \
+    visible         1\
+} 
+
+//####################################################
+//######## MAP ##############################
+//####################################################
+
+
+#define SPAWN_MAP(arg) \
+	itemDef \
+	{ \
+		rect			SPAWN_MAP_RECT \
+		forecolor		1 1 1 1\
+		background		"compass_map_default"\
+		ownerdraw		CG_PLAYER_FULLMAP_MAP\
+		visible			1\
+		decoration\
+	} \
+	itemDef \
+	{ \
+		rect			SPAWN_MAP_RECT\
+		forecolor		1 1 1 1\
+		background		"compassping_friendly"\
+		ownerdraw		CG_PLAYER_FULLMAP_ACTORS\
+		visible			1\
+		decoration\
+	} \
+	itemDef \
+	{ \
+		rect			SPAWN_MAP_RECT\
+		forecolor		1 1 1 1\
+		background		"compassping_player"\
+		ownerdraw		CG_PLAYER_FULLMAP_PLAYER\
+		visible			1\
+		decoration\
+	} \
+	itemDef \
+	{ \
+		rect			SPAWN_MAP_RECT\
+		forecolor		1 1 1 1\
+		background		"objective_line"\
+		ownerdraw		CG_PLAYER_FULLMAP_POINTERS\
+		visible			1\
+		decoration\
+	}
+
+
+//####################################################
+//######## SELECT SPAWN ##############################
+//####################################################
+
+#define SELECT_SPAWN_BUTTON(spawnID, SpawnText, spawn_text ,x, y ) \
+itemDef \
+{ \
+	name			"spawn_bg_HL" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) SPAWN_WIDTH SPAWN_HEIGHT 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.8 \
+    visible        when( (localVarString( spi_button ) == spawnID) && localVarString( spi_selected ) != spawnID ); \
+} \
+itemDef \
+{ \
+	name			"spawn_bg_IDLE" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) SPAWN_WIDTH SPAWN_HEIGHT 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.5 \
+    visible         when( localVarString( spi_button ) != spawnID );  \
+} \
+itemDef \
+{ \
+	name			"spawn_bg_SELECTED" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) SPAWN_WIDTH SPAWN_HEIGHT 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("white") \
+	Forecolor 		1 1 1 0.5 \
+    visible         when( localVarString( spi_selected ) == spawnID );  \
+} \
+itemDef \
+{ \
+	name		"spawn_text0" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(SPAWN_HEIGHT+y)) SPAWN_WIDTH SPAWN_HEIGHT 0 0 \
+	exp			text( SpawnText ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_LEFT \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+    visible        when(  localVarString( spi_selected ) != spawnID ); \
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	name		"spawn_text1" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(SPAWN_HEIGHT+y)) SPAWN_WIDTH SPAWN_HEIGHT 0 0 \
+	exp			text( SpawnText ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_LEFT \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	1 1 1 1 \
+    visible     when( localVarString( spi_selected ) == spawnID );  \
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) SPAWN_WIDTH SPAWN_HEIGHT 0 0 \
+	type		ITEM_TYPE_BUTTON \
+	visible		1 \
+	style		WINDOW_STYLE_FILLED \
+	mouseEnter \
+	{ \
+		play "mouse_over"; \
+		setLocalVarString spi_button spawnID; \
+		setLocalVarString spi_button2 "0"; \
+	} \
+	mouseExit \
+	{ \
+		setLocalVarString spi_button "-1"; \
+	} \
+	action \
+	{ \
+		play "mouse_click"; \
+		setLocalVarString spi_selected spawnID; \
+		scriptMenuResponse spawnID;\
+	} \
+} \
+itemDef \
+{ \
+	name			"Confirm_spawn_bg_HL" \
+	rect			CONFIRM_BUTTON_RECT \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.8 \
+    visible        when( (localVarString( spi_button2 ) == "1" ) && localVarString( spi_selected ) == spawnID  ); \
+} \
+itemDef \
+{ \
+	name			"Confirm_spawn_bg_IDLE" \
+	rect			CONFIRM_BUTTON_RECT \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.5 \
+    visible         when( localVarString( spi_button2 ) == "0"  && localVarString( spi_selected ) == spawnID );  \
+} \
+itemDef \
+{ \
+	name		"confirm_spawn_text0" \
+	rect		CONFIRM_TEXT_RECT \
+	exp			text( spawn_text ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.75 \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+	style		WINDOW_STYLE_FILLED \
+    visible     when( localVarString( spi_button2 ) == "0" && localVarString( spi_selected ) == spawnID );  \
+} \
+itemDef \
+{ \
+	name		"confirm_spawn_text1" \
+	rect		CONFIRM_TEXT_RECT \
+	exp			text( spawn_text ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	ITEM_TEXTSTYLE_NORMAL \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.75 \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	1 1 1 1 \
+	style		WINDOW_STYLE_FILLED \
+    visible     when( localVarString( spi_button2 ) == "1" && localVarString( spi_selected ) == spawnID ); \
+} \
+itemDef \
+{ \
+	rect		CONFIRM_BUTTON_RECT \
+	type		ITEM_TYPE_BUTTON \
+    visible     when( localVarString( spi_selected ) == spawnID ); \
+	style		WINDOW_STYLE_FILLED \
+	mouseEnter \
+	{ \
+		play "mouse_over"; \
+		setLocalVarString spi_button2 "1"; \
+	} \
+	mouseExit \
+	{ \
+		setLocalVarString spi_button2 "0"; \
+	} \
+	action \
+	{ \
+		setLocalVarString spi_selected "0"; \
+		setLocalVarString spi_button "0"; \
+		setLocalVarString spi_button2 "0"; \
+		LOCAL_ACTION("confirm_spawn"); \
+	} \
+}
+
+//####################################################
+//######## SELECT CLASS ##############################
+//####################################################
+
+#define TITLE_CLASS_SELECT(textName,x,y,w,h) \
+itemDef \
+{ \
+	name		"title_select_class" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(w/2)) (VERTICAL_ALIGN_CENTER+(y)) 1 1 0 0 \
+	exp			text( textName ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_NORMAL \
+	textalign	ITEM_ALIGN_CENTER \
+	textscale	0.5 \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+	visible		1 \
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	name			"classes_bg" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) w h 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.5 \
+    visible         1\
+} \
+
+
+#define SELECT_CLASS(classtype, class_name, class_image ,weap1_image, weap2_image, eq_image, eq_amount, frag1_image, frag1_amount, frag2_image, frag2_amount, x, y ) \ 
+itemDef \
+{ \
+	name			"class_bg1" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) CLASS_WIDTH CLASS_HEIGHT 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.8 \
+    visible        when( localVarString( spi_button ) == classtype ); \
+} \
+itemDef \
+{ \
+	name			"class_bg0" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) CLASS_WIDTH CLASS_HEIGHT 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material("black") \
+	Forecolor 		1 1 1 0.5 \
+    visible         when( localVarString( spi_button ) != classtype );  \
+} \
+itemDef \
+{ \
+	name			"weap1_image" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x+5+10)) (VERTICAL_ALIGN_CENTER+(y+5)) WEAP1_W WEAP1_H 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material(weap1_image) \
+	Forecolor 		1 1 1 1 \
+    visible         1 \
+} \
+itemDef \
+{ \
+	name			"weap2_image" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(CLASS_WIDTH-WEAP2_SIZE)+15) (VERTICAL_ALIGN_CENTER+(y+5)) WEAP2_SIZE WEAP2_SIZE 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material(weap2_image) \
+	Forecolor 		1 1 1 1 \
+    visible         1 \
+} \
+itemDef \
+{ \
+	name			"frag1_image" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x+5)) (VERTICAL_ALIGN_CENTER+(y+WEAP2_SIZE+5)) FRAG_SIZE FRAG_SIZE 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material(frag1_image) \
+	Forecolor 		1 1 1 1 \
+    visible        	when( frag1_image != "none" ); \
+} \
+itemDef \
+{ \
+	name			"frag2_image" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(x+15+FRAG_SIZE*2)) (VERTICAL_ALIGN_CENTER+(y+WEAP2_SIZE+5)) FRAG_SIZE FRAG_SIZE 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material(frag2_image) \
+	Forecolor 		1 1 1 1 \
+    visible        	when( frag2_image != "none" ); \
+} \
+itemDef \
+{ \
+	name			"eq_image" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(CLASS_WIDTH-WEAP2_SIZE)+15) (VERTICAL_ALIGN_CENTER+(y+WEAP2_SIZE+5)) FRAG_SIZE FRAG_SIZE 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material(eq_image) \
+	Forecolor 		1 1 1 1 \
+    visible        	when( eq_image != "none" ); \
+} \
+itemDef \
+{ \
+	name		"class_text" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(280)) (VERTICAL_ALIGN_CENTER+(55)) CLASS_WIDTH CLASS_HEIGHT 0 0 \
+	exp			text( class_name ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_LEFT \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+    visible        when( localVarString( spi_button ) == classtype ); \
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	name		"frag1_amount_text" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x+FRAG_SIZE+5)) (VERTICAL_ALIGN_CENTER+(y+WEAP2_SIZE+5)+FRAG_SIZE) FRAG_SIZE FRAG_SIZE 0 0 \
+	exp			text( frag1_amount ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_LEFT \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+    visible      1\
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	name		"frag2_amount_text" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x+15+FRAG_SIZE*3)) (VERTICAL_ALIGN_CENTER+(y+WEAP2_SIZE+5)+FRAG_SIZE) FRAG_SIZE FRAG_SIZE 0 0 \
+	exp			text( frag2_amount ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_LEFT \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+    visible      1\
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	name		"eq_amount_text" \
+	rect		(HORIZONTAL_ALIGN_CENTER+(CLASS_WIDTH-WEAP2_SIZE)+15+FRAG_SIZE) (VERTICAL_ALIGN_CENTER+(y+WEAP2_SIZE+5+FRAG_SIZE)) FRAG_SIZE FRAG_SIZE 0 0 \
+	exp			text( eq_amount ) \
+	type		ITEM_TYPE_TEXT \
+	textfont	UI_FONT_OBJECTIVE \
+	textstyle	CHOICE_TEXTSTYLE \
+	textalign	ITEM_ALIGN_LEFT \
+	textscale	0.5 \
+	textalignx	0 \
+	textaligny	0 \
+	Forecolor 	CHOICE_TEXTCOLOR \
+    visible      1\
+	style		WINDOW_STYLE_FILLED \
+} \
+itemDef \
+{ \
+	name			"class_char_image" \
+	rect			(HORIZONTAL_ALIGN_CENTER+(280+60)) (VERTICAL_ALIGN_CENTER+(60)) CHAR_WIDTH CHAR_HEIGHT 0 0 \
+	style			WINDOW_STYLE_SHADER \
+	exp				material(class_image) \
+	Forecolor 		1 1 1 1 \
+    visible        when( localVarString( spi_button ) == classtype ); \
+} \
+itemDef \
+{ \
+	rect		(HORIZONTAL_ALIGN_CENTER+(x)) (VERTICAL_ALIGN_CENTER+(y)) CLASS_WIDTH CLASS_HEIGHT 0 0 \
+	type		ITEM_TYPE_BUTTON \
+	visible		1 \
+	style		WINDOW_STYLE_FILLED \
+	mouseEnter \
+	{ \
+		play "mouse_over"; \
+		setLocalVarString spi_button classtype; \
+	} \
+	mouseExit \
+	{ \
+		setLocalVarString spi_button "-1"; \
+	} \
+	action \
+	{ \
+		play "mouse_click"; \
+		LOCAL_ACTION(classtype); \
+	} \
+}

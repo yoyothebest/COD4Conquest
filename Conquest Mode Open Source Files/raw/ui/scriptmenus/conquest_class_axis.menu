@@ -1,0 +1,35 @@
+#include "ui/scriptmenus/conquest_common.menu"
+{
+	menuDef
+	{
+		name 		conquest_class_axis
+		rect		HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER 10000 10000 0 0
+		onOpen{}
+		onClose{}
+		onEsc{}
+		//when x and y parameters are 0 then the image/icon is on the top left corner, x and y seem to be 640x480 resolution.
+		
+/*
+		=====Assault===================
+		ak47, m9, frags x2, flash x1
+		=====Support===================
+		rpd, m9, ammopack, frags x3, smoke x1
+		=====Medic===================
+		p90, m9, medpack, frags x1
+		=====Sniper===================
+		dragunov, m9,	claymores x2, frags x1
+		=====Spec-Ops===================
+		p90sd, m9sd, c4 x2, flash x4		
+*/
+		
+		TITLE_CLASS_SELECT( "@CONQUEST_SELECT_CLASS" , 20, 20, 600, 450)
+		SELECT_CLASS("assault", "@CONQUEST_ASSAULT", "char_axis_assault","weapon_ak47",  		"weapon_m9beretta",			 "none", "@CONQUEST_NULL", "weapon_fraggrenade", "@CONQUEST_X2", "weapon_flashbang", "@CONQUEST_X1", CLASS_X, CLASS_X )
+		SELECT_CLASS("support", "@CONQUEST_SUPPORT",  "char_axis_support",   "weapon_rpd", 			 "weapon_m9beretta", 	"none",  "@CONQUEST_NULL", "weapon_fraggrenade", "@CONQUEST_X3", "weapon_smokegrenade", "@CONQUEST_X1", CLASS_X, CLASS_X+CLASS_HEIGHT+CLASS_DIFFERENCE )
+		//SELECT_CLASS("support", "@CONQUEST_SUPPORT",  "char_axis_support",   "weapon_rpd", 			 "weapon_m9beretta", 	"weapon_ammopack",  "@CONQUEST_X3", "weapon_fraggrenade", "@CONQUEST_X3", "weapon_smokegrenade", "@CONQUEST_X1", CLASS_X, CLASS_X+CLASS_HEIGHT+CLASS_DIFFERENCE )
+		//SELECT_CLASS("medic",  "@CONQUEST_MEDIC"   ,  "char_axis_medic",     "weapon_p90",   			"weapon_m9beretta",   "weapon_medpack", "@CONQUEST_X3", "weapon_fraggrenade", "@CONQUEST_X1",             "none", "@CONQUEST_NULL", CLASS_X, CLASS_X+(CLASS_HEIGHT+CLASS_DIFFERENCE)*2 )
+		SELECT_CLASS("medic",  "@CONQUEST_MEDIC"   ,  "char_axis_medic",     "weapon_p90",   			"weapon_m9beretta",   "specialty_armorvest", "@CONQUEST_X1", "weapon_fraggrenade", "@CONQUEST_X1",             "none", "@CONQUEST_NULL", CLASS_X, CLASS_X+(CLASS_HEIGHT+CLASS_DIFFERENCE)*2 )
+		SELECT_CLASS("sniper",  "@CONQUEST_SNIPER",  "char_axis_sniper" ,     "weapon_dragunovsvd",           "weapon_m9beretta", "weapon_claymore", "@CONQUEST_X2", "weapon_fraggrenade", "@CONQUEST_X1",             "none", "@CONQUEST_NULL", CLASS_X, CLASS_X+(CLASS_HEIGHT+CLASS_DIFFERENCE)*3 )
+		SELECT_CLASS("specops", "@CONQUEST_SPECOPS",  "char_axis_specops" ,"weapon_p90_suppressor",  "weapon_m9beretta_silencer",     "weapon_c4", "@CONQUEST_X2", "weapon_flashbang", "@CONQUEST_X4",                "none", "@CONQUEST_NULL", CLASS_X, CLASS_X+(CLASS_HEIGHT+CLASS_DIFFERENCE)*4 )
+		
+	}	
+}
